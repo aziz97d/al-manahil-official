@@ -1,0 +1,42 @@
+$bgcolor: #004080;
+.connect-us-item {
+  min-width: 250px;
+  min-height: 150px;
+  //   background-image: linear-gradient(45deg, #004080, #0040809c);
+  background-color: #00344f;
+  color: white;
+  padding: 25px;
+  text-align: left;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  h4 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  p {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: #004080;
+    }
+  }
+  .icon {
+    font-size: 70px;
+    right: -5px;
+    bottom: -5px;
+    position: absolute;
+    color: white;
+    opacity: 0.5;
+    transform: rotate(-30deg);
+  }
+}

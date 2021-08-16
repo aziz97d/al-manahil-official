@@ -1,0 +1,130 @@
+footer {
+  background-color: #b1d3e4;
+  // position: relative;
+}
+.footer-shape {
+  margin-bottom: -20px;
+}
+.footer-top {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3% 10%;
+  // margin-top: 100px;
+  // border-top: green 2px solid;
+  background-color: #b1d3e4;
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .org-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .org-logo {
+      width: 250px;
+    }
+
+    .org-info-details {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      .org-info-item {
+        display: flex;
+        align-items: center;
+
+        .info-icon {
+          margin-right: 5px;
+          font-size: 18px;
+        }
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .gallery-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin: 5px;
+    }
+  }
+
+  .news-letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input {
+      width: 80%;
+      height: 40px;
+      border-radius: 15px;
+      outline: none;
+      border: none;
+      margin: 5px 0;
+      padding: 0 10px;
+    }
+    input[type="button"] {
+      background-color: #83ba09;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 15px;
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 5%;
+
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        color: #5f646b;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+
+        &:hover {
+          border: 1px solid #83ba09;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  height: 80px;
+  align-items: center;
+
+  border-top: 1px solid #5f646b;
+  .navigation {
+    .navigation-item {
+      text-decoration: none;
+      color: #5f646b;
+      font-weight: 500;
+      padding: 5px 10px;
+      &:hover {
+        color: #83ba09;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.nav-container {
+  // background-color: #f0f0f0;
+  background: transparent;
+  height: 60px;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 0 10vw;
+  ul {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      padding: 4px 10px;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+      }
+    }
+    .nav-item.nav-button {
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .donate-button {
+      border: 1px solid white;
+      padding: 5px 15px;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+  }
+
+  .right-navbar {
+    li {
+      margin-right: 0 10px;
+      border-right: 1px solid white;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.latest-news {
+  // width: 80vw;
+  //   height: 600px;
+  padding: 10vh 10vw;
+  .heading {
+    display: flex;
+
+    .causes-title {
+      width: 30%;
+      text-align: left;
+      h1 {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+    .causes-description {
+      width: 70%;
+
+      p {
+        font-size: 20px;
+        text-align: right;
+      }
+    }
+  }
+
+  .news-list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+    }
+    .news-card {
+      width: 350px;
+      background-color: #f7f7f7;
+      img {
+        width: 100%;
+      }
+      .details {
+        padding: 20px 10px;
+        text-align: left;
+
+        .top {
+          display: flex;
+
+          .date {
+            width: 40px;
+            height: 50px;
+            background-color: #00344f;
+            padding: 5px;
+            color: #ffffff;
+            text-align: center;
+            p {
+              border-bottom: 3px solid white;
+              font-size: 17px;
+              margin: 0 !important;
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+
+          .news-info {
+            padding: 5px 10px;
+            bcolor: #00344f;
+            & > p {
+              font-size: 20px;
+              font-weight: 400;
+              text-transform: uppercase;
+              letter-spacing: 1.1px;
+            }
+            .activity {
+              display: flex;
+              font-size: 15px;
+
+              p {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          height: 150px;
+          padding-top: 20px;
+          p {
+            line-height: 25px;
+          }
+
+          .news-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+          .read-more-button {
+            text-decoration: none;
+            padding: 5px 10px;
+            width: fit-content;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 1px solid #00344f;
+            color: #00344f;
+            &:hover {
+              color: white;
+              background-color: #00344f;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.appeal-section{
+    width: 80%;
+    background-color: #E6E6E7;
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 35px;
+    .appeal{
+        width: 100%;
+        height: 280px;
+        padding: 10px 10px 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 4px 1px rgba(99, 99, 99, 0.144);
+        .appeal-sub{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+            // border-bottom: 4px solid #0F95A9;
+            img{
+                width: 100%;
+            }
+
+            p{
+                font-size: 18px;
+            }
+        }
+
+    }
+}

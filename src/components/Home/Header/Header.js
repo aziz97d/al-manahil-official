@@ -1,29 +1,38 @@
-import React from "react";
-import HeaderInfo from "../../HeaderInfo/HeaderInfo";
-import Navbar from "../../shared/Navbar/Navbar";
-import "./Header.scss";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div class="overlay"></div>
-      <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source
-          src="https://videos.ctfassets.net/wvozpes63uc8/3LyhCLp2YLQ02HnzHp5IPw/78c7d6888d6dadc406afc24e318133ec/home-cycle-video.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="container">
+import React from 'react';
+import Slider from "react-slick";
+import Navbar from "../../shared/Navbar/Navbar.js";
+import DonateForm from '../DonateForm/DonateForm.js';
+import './Header.css'
+function Header() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        accessibility: false
+      };
+    return (
+        <>
         <Navbar></Navbar>
-        <HeaderInfo></HeaderInfo>
+      <div>
+        <Slider {...settings}>
+          <div>
+          <img className="slider-image" src="https://pennyappeal.org/storage/app/media/appeals/sadaqah/pa---website---sadaqah---websitepagebanner-copy.jpg"  alt="..."/>
+          </div>
+          <div>
+          <img className="slider-image" src="https://pennyappeal.org/storage/app/media/appeals/thirst-relief/2020-banners/banners-wo-ramadan-cta/penny-appeal---muharram-21---thirst-relief---website---desktop-banner.jpg"  alt="..."/>
+          </div>
+          <div>
+          <img className="slider-image" src="https://pennyappeal.org/storage/app/media/appeals/sadaqa-jariya/2020-banners/sadaqah-jariyah---desktop-website-banner.jpg" alt="..."/>
+          </div>
+          
+        </Slider>
       </div>
-    </div>
-  );
-};
+      <DonateForm></DonateForm>
+      </>
+    );
+  }
 
-export default Header;
+
+export default Header

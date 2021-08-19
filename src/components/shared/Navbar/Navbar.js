@@ -33,6 +33,14 @@ function Navbar() {
   });
   return (
     <div className="navbar">
+      <nav className="nav-top">
+        <div className='brand-logo'>
+          <img src='https://amwfb.org/wp-content/uploads/2020/06/logo.png' />
+        </div>
+        <div className='feature'>
+
+        </div>
+      </nav>
       <div className={navbarClasses.join(" ")}>
         <ul>
           <li>

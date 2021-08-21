@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-.nav-top{
-  height: 60px;
-  width: 80%;
-  padding: 0 10%;
-  background-color: #00AD50;
-  
-  .brand-logo{
-    height: 100%;
-    img{
-      height: 90%;
-      padding: 5px 0;
-    }
-  }
-}
+
 .nav-container {
-  background-color: #fff;
-  // background: transparent;
+  background-color: #00AD50;
   height: 60px;
   width: 90%;
   display: flex;
@@ -24,6 +10,15 @@
   z-index: 1000;
   padding: 0 5%;
   font-family: 'Nunito Sans', sans-serif;
+  
+  
+  .brand-logo{
+    height: 100%;
+    img{
+      height: 80%;
+      padding: 5px 0;
+    }
+  }
   ul {
     display: flex;
     list-style: none;
@@ -32,7 +27,7 @@
       padding: 4px 10px;
       text-decoration: none;
       font-size: 17px;
-     color: #000;
+     color: #fff;
 
       &:hover {
       }
@@ -58,4 +53,56 @@
       }
     }
   }
+}
+
+.nav-bottom{
+  background-color: #fff;
+  height: 30px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 0 5%;
+  font-family: 'Nunito Sans', sans-serif;
+  border-bottom: 1px solid #00AD50;
+  .contact-info{
+    color: #00AD50;
+    font-size: 20px;
+
+    .phone-icon{
+      color: black;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        &::before {
+          content: '\f095';
+          font-family: "Font Awesome 5 Free";
+          opacity: 1;
+          color: #00AD50;
+        }
+    }
+  }
+
+    .nav-social-icons{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      .social-icon{
+        margin: 5px 15px 0;
+        color: #00AD50;
+        font-size: 20px;
+      }
+    }
+  
+}
+
+
+.scrolled{
+  position: fixed;
+  top: 0;
+  transition: top 0.5s ease ;
+}
+.scrolled + .nav-bottom{
+  padding-top: 60px;
 }

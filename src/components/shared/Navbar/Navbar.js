@@ -6,7 +6,9 @@ import {
   AiFillInstagram,
   AiFillYoutube,
   AiFillLinkedin,
-} from "react-icons";
+} from "react-icons/ai";
+import {FaPhone} from "react-icons/fa";
+
 import "./Navbar.scss";
 // import {
 //   IoMailOutline,
@@ -33,15 +35,10 @@ function Navbar() {
   });
   return (
     <div className="navbar">
-      <nav className="nav-top">
-        <div className='brand-logo'>
+      <div className={navbarClasses.join(" ")}>
+      <div className='brand-logo'>
           <img src='https://amwfb.org/wp-content/uploads/2020/06/logo.png' />
         </div>
-        <div className='feature'>
-
-        </div>
-      </nav>
-      <div className={navbarClasses.join(" ")}>
         <ul>
           <li>
             <Link className="nav-item">Home</Link>
@@ -72,6 +69,17 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <nav className="nav-bottom"> 
+        <div className="contact-info">
+          <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
+        </div>
+          <ul className="nav-social-icons">
+            <li className="social-icon"><AiFillFacebook /></li>
+            <li className="social-icon"><AiFillYoutube /></li>
+            <li className="social-icon"><AiFillInstagram /></li>
+            <li className="social-icon"><AiFillTwitterSquare/></li>
+          </ul>
+      </nav>
     </div>
   );
 }

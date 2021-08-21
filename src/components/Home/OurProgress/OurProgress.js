@@ -1,15 +1,24 @@
 import React from "react";
 import "./OurProgress.scss";
-
+import CountUp from 'react-countup';
 import {
   GiSelfLove,
   GiLoveLetter,
   GiClover,
   GiFirstAidKit,
 } from "react-icons/gi";
+import {
+  FaMosque,
+  FaHouseDamage
+} from "react-icons/fa";
+import {
+  GiWaterTank
+} from "react-icons/gi";
 import { Link } from "react-router-dom";
 
 function OurProgress() {
+  
+
   return (
     <div>
       <div className="our-progress">
@@ -22,24 +31,24 @@ function OurProgress() {
 
         <div className="progress-list">
           <div className="our-progress-item">
-            <GiClover className="icon" />
-            <h1>3000+</h1>
-            <p>Shelter Houses and Counting</p>
+            <FaHouseDamage className="icon" />
+            <h1><CountUp end={3000} duration={4}/>+</h1>
+            <p>Shelter Houses</p>
+          </div>
+          <div className="our-progress-item">
+            <GiWaterTank className="icon" />
+            <h1><CountUp end={3000} duration={4}/>+</h1>
+            <p>Water well</p>
           </div>
           <div className="our-progress-item">
             <GiClover className="icon" />
-            <h1>3000+</h1>
-            <p>Shelter Houses and Counting</p>
+            <h1><CountUp end={1} duration={2}/>M+</h1>
+            <p>Beneficiaries</p>
           </div>
           <div className="our-progress-item">
-            <GiClover className="icon" />
-            <h1>3000+</h1>
-            <p>Shelter Houses and Counting</p>
-          </div>
-          <div className="our-progress-item">
-            <GiClover className="icon" />
-            <h1>3000+</h1>
-            <p>Shelter Houses and Counting</p>
+            <FaMosque className="icon" />
+            <h1><CountUp end={3000} duration={4}/>+</h1>
+            <p>Mosque</p>
           </div>
         </div>
         <Link className="button-info">View More</Link>

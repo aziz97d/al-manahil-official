@@ -7,6 +7,7 @@ import LatestCauses from "../LatestCauses/LatestCauses";
 import LatestNews from "../LatestNews/LatestNews";
 import OurProgress from "../OurProgress/OurProgress";
 import SuccessStory from "../SuccessStory/SuccessStory.js";
+import WhoWeAre from "../WhoWeAre/WhoWeAre.js";
 
 const Home = () => {
   return (
@@ -15,7 +16,8 @@ const Home = () => {
       <Appeal></Appeal>
       <ConnectUs></ConnectUs>
 
-      <LatestCauses></LatestCauses>
+      {/* <LatestCauses></LatestCauses> */}
+      {/* <WhoWeAre></WhoWeAre> */}
       <OurProgress></OurProgress>
       <SuccessStory></SuccessStory>
       <Footer></Footer>

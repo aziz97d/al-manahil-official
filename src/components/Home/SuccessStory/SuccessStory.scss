@@ -17,6 +17,106 @@
     padding: 0 10%;
     display: grid;
     grid-template-columns: 2fr 3fr;
+  
+    .media-coverage{
+
+      h3{
+        margin: 0;
+        color: #00AD50;
+      }
+      .media-card-list{
+        text-align: left;
+        .media-card{
+          margin-top: 30px;
+          margin-right: 50px;
+          border-radius: 5px;
+          box-shadow: 0 3px 7px -1px rgba(#000, .2);
+          padding: 10px;
+          .media-card-body{
+            display: flex;
+            align-items: center;
+            .media-card-image{
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+              border:2px solid #00AD50;
+            }
+            .media-card-details{
+              padding: 0 15px;
+              h4{
+                margin:5px 0;
+              }
+              p{
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+            }
+          }
+          .media-card-footer{
+            display: flex;
+            justify-content: space-between;
+            .media-card-read-more, .media-card-download{
+              text-decoration: none;
+              padding: 5px 15px;
+            }
+            .media-card-read-more{
+              background-color: #00AD50;
+              color: #fff;
+              border: 2px solid transparent;
+              &:hover{
+                color: #00AD50;
+                border: 2px solid #00AD50;
+                background-color: #fff;
+              }
+            }
+            .media-card-download{
+              border: 2px solid #00AD50;
+            }
+          }
+        }
+      }
+    }
+
+    .latest-success-story{
+
+      .success-story-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00AD50;
+        height: 40px;
+        padding: 0 20px;
+        margin:0 20px;
+        color: white;
+
+        h3{
+          line-height: 40px;
+        }
+
+        .nav-social-icons{
+          display: flex;
+          list-style: none;
+
+          .social-icon{
+            margin:0 10px;
+            cursor: pointer;
+            &:hover{
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      .story-list{
+        margin: 0 20px;
+      }
+      
+    }
+
+
+
 }
 
 

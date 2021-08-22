@@ -1,5 +1,5 @@
 footer {
-  background-color: #b1d3e4;
+  background-color: #E1ECF9;
   // position: relative;
 }
 .footer-shape {
@@ -12,7 +12,8 @@ footer {
   padding: 3% 10%;
   // margin-top: 100px;
   // border-top: green 2px solid;
-  background-color: #b1d3e4;
+  font-size: 17px;
+  background-color: #E1ECF9;
   h3 {
     margin-bottom: 10px;
   }
@@ -64,23 +65,28 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
-    input {
-      width: 80%;
-      height: 40px;
-      border-radius: 15px;
-      outline: none;
-      border: none;
-      margin: 5px 0;
-      padding: 0 10px;
+    .subscribe{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 80%;
+        height: 40px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin: 5px 0;
+      }
+      input[type="button"] {
+        background-color: #00AD50;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 15px;
+      }
     }
-    input[type="button"] {
-      background-color: #83ba09;
-      color: white;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      font-size: 15px;
-    }
+    
 
     .social {
       display: flex;
@@ -101,7 +107,7 @@ footer {
         transition: 0.3s ease;
 
         &:hover {
-          border: 1px solid #83ba09;
+          border: 1px solid #00AD50;
         }
       }
     }
@@ -115,7 +121,7 @@ footer {
   height: 80px;
   align-items: center;
 
-  border-top: 1px solid #5f646b;
+  border-top: 1px solid #00AD50;
   .navigation {
     .navigation-item {
       text-decoration: none;
@@ -123,7 +129,7 @@ footer {
       font-weight: 500;
       padding: 5px 10px;
       &:hover {
-        color: #83ba09;
+        color: #00AD50;
       }
     }
   }

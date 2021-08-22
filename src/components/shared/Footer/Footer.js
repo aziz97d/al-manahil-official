@@ -21,7 +21,7 @@ const Footer = () => {
         viewBox="0 0 1440 220"
       >
         <path
-          fill="#b1d3e4"
+          fill="#E1ECF9"
           fill-opacity="1"
           d="M0,96L48,117.3C96,139,192,181,288,176C384,171,480,117,576,122.7C672,128,768,192,864,186.7C960,181,1056,107,1152,96C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
@@ -97,7 +97,7 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
               optio veritatis aperiam ullam eveniet obcaecati!
             </p>
-            <div>
+            <div className="subscribe">
               <input type="email" placeholder="Enter your email" />
               <input type="button" value="Subscribe" />
             </div>

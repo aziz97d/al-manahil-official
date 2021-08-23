@@ -7,7 +7,7 @@ import {
   AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
-import {FaPhone} from "react-icons/fa";
+import {FaPhone,FaBars} from "react-icons/fa";
 
 import "./Navbar.scss";
 // import {
@@ -32,14 +32,31 @@ function Navbar() {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    
+    const navUl = document.getElementById('nav-ul');
+    const navRight = document.getElementById('nav-right');
+    const navBottom = document.getElementById('nav-bottom');
+  const navBtn = document.getElementById('nav-btn');
+    navBtn.addEventListener('click', ()=>{
+      navUl.classList.toggle('show-menu');
+      navRight.classList.toggle('show-menu');
+      navBottom.classList.toggle('show-menu');
+    });
   });
+
+  
+
+  
   return (
     <div className="navbar">
       <div className={navbarClasses.join(" ")}>
       <div className='brand-logo'>
           <img src='https://amwfb.org/wp-content/uploads/2020/06/logo.png' />
         </div>
-        <ul>
+        <button id="nav-btn" className="nav-bar">
+        <FaBars  />
+        </button>
+        <ul id="nav-ul" className="nav-ul">
           <li>
             <Link className="nav-item">Home</Link>
           </li>
@@ -60,7 +77,7 @@ function Navbar() {
           </li>
         </ul>
 
-        <ul className="right-navbar">
+        <ul id="nav-right" className="nav-right">
           <li>
             <Link className="nav-item nav-button donate-button">Donate</Link>
           </li>
@@ -68,8 +85,9 @@ function Navbar() {
             <Link className="nav-item nav-button sign-in-button">Sign In</Link>
           </li>
         </ul>
+      
       </div>
-      <nav className="nav-bottom"> 
+      <div id="nav-bottom" className="nav-bottom"> 
         <div className="contact-info">
           <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
         </div>
@@ -79,7 +97,7 @@ function Navbar() {
             <li className="social-icon"><AiFillInstagram /></li>
             <li className="social-icon"><AiFillTwitterSquare/></li>
           </ul>
-      </nav>
+      </div>
     </div>
   );
 }

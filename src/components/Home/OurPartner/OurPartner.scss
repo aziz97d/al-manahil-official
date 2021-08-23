@@ -1,9 +1,15 @@
 .p-slider {
   width: 80vw;
-  padding: 0 10vw;
+  padding: 20px 10vw;
+  margin-top: 50px;
+  text-align: center;
+  border-top: #00ad5185 5px dotted;
 
+  h2{
+    color: #00AD50;
+  }
   p {
-    margin: 5px 0 20px;
+    margin: 5px 0 50px;
   }
 }
 .p-slider-item {

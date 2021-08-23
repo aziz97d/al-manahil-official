@@ -11,10 +11,11 @@ function OurPartner() {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        
     };
     return (
         <div className="p-slider">

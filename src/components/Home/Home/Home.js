@@ -5,6 +5,7 @@ import ConnectUs from "../ConnectUs/ConnectUs";
 import Header from "../Header/Header.js";
 import LatestCauses from "../LatestCauses/LatestCauses";
 import LatestNews from "../LatestNews/LatestNews";
+import OurPartner from "../OurPartner/OurPartner.js";
 import OurProgress from "../OurProgress/OurProgress";
 import SuccessStory from "../SuccessStory/SuccessStory.js";
 import WhoWeAre from "../WhoWeAre/WhoWeAre.js";
@@ -13,14 +14,15 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      <Appeal></Appeal>
-      <ConnectUs></ConnectUs>
+      {/* <Appeal></Appeal>
+      <ConnectUs></ConnectUs> */}
 
       {/* <LatestCauses></LatestCauses> */}
       {/* <WhoWeAre></WhoWeAre> */}
-      <OurProgress></OurProgress>
+      {/* <OurProgress></OurProgress>
       <SuccessStory></SuccessStory>
-      <Footer></Footer>
+      <OurPartner></OurPartner>
+      <Footer></Footer> */}
     </div>
   );
 };

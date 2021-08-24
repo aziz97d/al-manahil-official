@@ -326,3 +326,42 @@
       }
     }
   }
+
+  @media screen and (max-width: 767px){
+    .success-story{
+      width: 90%;
+      padding: 10px 5%;
+      grid-template-columns: 1fr;
+
+
+      .media-coverage{
+
+        .media-card-list{
+          // width: 80%;
+          .media-card{
+            margin-right: 0;
+            width: 90%;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .latest-success-story{
+        .success-story-header{
+          margin: 15px 0;
+          padding: 0;
+          h3{
+            line-height: 20px;
+            font-size: 20px;
+          }
+          .nav-social-icons{
+            padding: 0;
+            .social-icon{
+              margin: 0 2px;
+            }
+          }
+          
+        }
+      }
+    }
+}

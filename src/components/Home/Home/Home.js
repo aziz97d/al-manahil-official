@@ -19,10 +19,10 @@ const Home = () => {
 
       {/* <LatestCauses></LatestCauses> */}
       {/* <WhoWeAre></WhoWeAre> */}
-      {/* <OurProgress></OurProgress>
+      <OurProgress></OurProgress>
       <SuccessStory></SuccessStory>
-      <OurPartner></OurPartner>
-      <Footer></Footer> */}
+      {/* <OurPartner></OurPartner> */}
+      {/* <Footer></Footer> */}
     </div>
   );
 };

@@ -9,7 +9,7 @@ export default function DonateForm() {
             </div>
             <div className="donate-input">
                 <span className="taka-sign">&#2547;</span>
-                <input type="text" />
+                <input type="text" placeholder="Amount"/>
             </div>
             <div className="donate-input">
                 <select >
@@ -18,7 +18,7 @@ export default function DonateForm() {
                 </select>
             </div>
             <div className="donate-button">
-                <a href='#' >Donate Now</a>
+                <a href='#' >Donate</a>
                 <img src='https://pennyappeal.org/themes/pennyappeal/assets/images/zkpolicy.png' />
             </div>
         </div>

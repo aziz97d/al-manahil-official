@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      {/* <Appeal></Appeal>
-      <ConnectUs></ConnectUs> */}
+      <Appeal></Appeal>
+      {/* <ConnectUs></ConnectUs> */}
 
       {/* <LatestCauses></LatestCauses> */}
       {/* <WhoWeAre></WhoWeAre> */}

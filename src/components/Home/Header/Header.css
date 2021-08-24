@@ -36,3 +36,23 @@
 /* .slick-active{
  color: #00AD50;
 } */
+
+@media screen and (max-width: 767px){
+    
+    .slick-slide img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;     
+        object-position: center;
+    }
+    .slick-next:before, .slick-prev:before {
+        font-size: 30px;
+    }
+    .slick-prev{
+        left: 10px;
+    }
+    .slick-next{
+        right: 0;
+        right: 20px;
+    }
+}

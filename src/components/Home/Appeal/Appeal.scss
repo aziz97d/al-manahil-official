@@ -3,7 +3,8 @@
     background-color: #E1ECF9;
     padding: 15px 10%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    // grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 35px;
     .appeal{
         width: 100%;
@@ -27,5 +28,18 @@
             }
         }
 
+    }
+
+    
+}
+
+@media screen and (max-width: 767px){
+    .appeal-section{
+        width: 90%;
+        padding: 15px 5%;
+        grid-gap: 10px;
+        .appeal{
+            width: 90%;
+        }
     }
 }

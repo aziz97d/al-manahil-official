@@ -18,7 +18,7 @@ import "./Navbar.scss";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  let navbarClasses = ["nav-container"];
+  let navbarClasses = ["is-show-nav"];
   if (scrolled) {
     navbarClasses.push("scrolled");
   }
@@ -33,23 +33,41 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     
+  });
+
+  useEffect(() =>{
+    //isShowed prevent multiple times call useEffect
+    let isShowed = false;
+
     const navUl = document.getElementById('nav-ul');
     const navRight = document.getElementById('nav-right');
     const navBottom = document.getElementById('nav-bottom');
-  const navBtn = document.getElementById('nav-btn');
+    const navBtn = document.getElementById('nav-btn');
     navBtn.addEventListener('click', ()=>{
-      navUl.classList.toggle('show-menu');
-      navRight.classList.toggle('show-menu');
-      navBottom.classList.toggle('show-menu');
+
+      if(!isShowed){
+        navUl.classList.toggle('show-menu');
+        navRight.classList.toggle('show-menu');
+        navBottom.classList.toggle('show-menu');
+        
+      }
+      
+      return;
     });
-  });
+
+    return () =>{
+      isShowed = true;
+    }
+  })
 
   
 
   
   return (
+    <div className={navbarClasses.join(" ")}>
     <div className="navbar">
-      <div className={navbarClasses.join(" ")}>
+      {/* <div className={navbarClasses.join(" ")}> */}
+      <div className="nav-container">
       <div className='brand-logo'>
           <img src='https://amwfb.org/wp-content/uploads/2020/06/logo.png' />
         </div>
@@ -98,6 +116,7 @@ function Navbar() {
             <li className="social-icon"><AiFillTwitterSquare/></li>
           </ul>
       </div>
+    </div>
     </div>
   );
 }

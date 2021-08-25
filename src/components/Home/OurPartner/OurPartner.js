@@ -15,10 +15,36 @@ function OurPartner() {
         speed: 2000,
         autoplaySpeed: 2000,
         cssEase: "linear",
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+              }
+            }
+          ]
         
     };
     return (
-        <div className="p-slider">
+        <div className="our-partner p-slider">
             <h2> Trusted Partners Worldwide </h2>
             <p>We are very greatful and feel honoured to our all partners for being with us</p>
             <Slider  {...settings}>

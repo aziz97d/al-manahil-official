@@ -1,4 +1,4 @@
-.p-slider {
+.p-slider.our-partner {
   width: 80vw;
   padding: 20px 10vw;
   margin-top: 50px;
@@ -11,16 +11,24 @@
   p {
     margin: 5px 0 50px;
   }
+  .p-slider-item {
+    max-width: 250px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    img {
+      margin: 30px 40px;
+      background-size: contain;
+      width: 90%;
+    }
+  }
 }
-.p-slider-item {
-  width: 250px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  img {
-    margin: 30px 40px;
-    background-size: contain;
-    width: 90%;
+
+
+@media screen and (max-width: 767px){
+  .p-slider.our-partner .p-slider-item img{
+    height: auto;
+
   }
 }

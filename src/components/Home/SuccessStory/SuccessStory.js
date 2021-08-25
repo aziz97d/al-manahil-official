@@ -7,6 +7,9 @@ import {
   AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
+import {
+  FaClock, FaArrowRight
+} from "react-icons/fa";
 import './SuccessStory.scss'
 
 function SuccessStory() {
@@ -53,87 +56,57 @@ function SuccessStory() {
               <div className="success-story-header">
                 <h3>Latest Success Story</h3>
                 <ul className="nav-social-icons">
-            <li className="social-icon"><AiFillFacebook /></li>
-            <li className="social-icon"><AiFillYoutube /></li>
-            <li className="social-icon"><AiFillInstagram /></li>
-            <li className="social-icon"><AiFillTwitterSquare/></li>
-          </ul>
+                  <li className="social-icon"><AiFillFacebook /></li>
+                  <li className="social-icon"><AiFillYoutube /></li>
+                  <li className="social-icon"><AiFillInstagram /></li>
+                  <li className="social-icon"><AiFillTwitterSquare/></li>
+                </ul>
               </div>
             
               <div className="story-list">
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style={{backgroundImage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"}}></div>
-                  <ul class="details">
-                    <li class="author"><a href="#">John Doe</a></li>
-                    <li class="date">Aug. 24, 2015</li>
-                    <li class="tags">
-                      <ul>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+              <div className="story-card">
+                  <div className="story-card-img ">
+                    <img src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+                  </div>
+                  <div className="story-card-details">
+                    <p className="story-card-title"><strong>Gambia Statement - children safe and case has been suspended</strong></p>
+                    <p className="story-card-news">Gambia Statement - children safe and case has been suspended Gambia Statement - children safe and case has been suspended</p>
+                    <div className="story-card-footer">
+                      <p className="story-card-date"> <FaClock className="date-icon" /> 10 June 2021</p>
+                      <a className="Read-more-btn">Read More <FaArrowRight className="Read-more-icon" /> </a>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="description" style={{borderRight: "3px solid #00AD50"}}>
-                  <h5 style={{color: "#00AD50"}}>Learning to Code</h5>
-                  <p className="news-details"> Lorem ipsum dolor sit  Neque ad aliquam facilis numquam  Neque ad aliquam facilis numquam Neque ad aliquam facilis numquam  Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                  <p class="read-more">
-                    <a href="#" style={{color: "#0F95A9"}}>Read More</a>
-                  </p>
+                <div className="story-card">
+                  <div className="story-card-img ">
+                    <img src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+                  </div>
+                  <div className="story-card-details">
+                    <p className="story-card-title"><strong>Gambia Statement - children safe and case has been suspended</strong></p>
+                    <p className="story-card-news">Gambia Statement - children safe and case has been suspended Gambia Statement - children safe and case has been suspended</p>
+                    <div className="story-card-footer">
+                      <p className="story-card-date"> <FaClock className="date-icon" /> 10 June 2021</p>
+                      <a className="Read-more-btn">Read More <FaArrowRight className="Read-more-icon" /> </a>
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style={{backgroundImage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"}}></div>
-                  <ul class="details">
-                    <li class="author"><a href="#">John Doe</a></li>
-                    <li class="date">Aug. 24, 2015</li>
-                    <li class="tags">
-                      <ul>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                <div className="story-card">
+                  <div className="story-card-img ">
+                    <img src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+                  </div>
+                  <div className="story-card-details">
+                    <p className="story-card-title"><strong>Gambia Statement - children safe and case has been suspended</strong></p>
+                    <p className="story-card-news">Gambia Statement - children safe and case has been suspended Gambia Statement - children safe and case has been suspended</p>
+                    <div className="story-card-footer">
+                      <p className="story-card-date"> <FaClock className="date-icon" /> 10 June 2021</p>
+                      <a className="Read-more-btn">Read More <FaArrowRight className="Read-more-icon" /> </a>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="description" style={{borderRight: "3px solid #F57920"}}>
-                  <h5 style={{color: "#F57920"}}>Learning to Code Learning to Code Learning to Code</h5>
-                  <p className="news-details"> Lorem ipsum dolor sit  Neque ad aliquam facilis numquam  Neque ad aliquam facilis numquam Neque ad aliquam facilis numquam  Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                  <p class="read-more">
-                    <a href="#" style={{color: "#F57920"}}>Read More</a>
-                  </p>
-                </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div class="photo" style={{backgroundImage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"}}></div>
-                  <ul class="details">
-                    <li class="author"><a href="#">John Doe</a></li>
-                    <li class="date">Aug. 24, 2015</li>
-                    <li class="tags">
-                      <ul>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div class="description" style={{borderRight: "3px solid #00AD50"}}>
-                  <h5 style={{color: "#00AD50", '&5:after':{background:'#00AD50'}}}>Learning to Code</h5>
-                  <p className="news-details"> Lorem ipsum dolor sit  Neque ad aliquam facilis numquam  Neque ad aliquam facilis numquam Neque ad aliquam facilis numquam  Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                  <p class="read-more">
-                    <a href="#" style={{color: "#00AD50"}}>Read More</a>
-                  </p>
-                </div>
-              </div>
-  
+              
               </div>
             
             </div>

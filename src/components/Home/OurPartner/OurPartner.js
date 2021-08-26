@@ -11,10 +11,11 @@ function OurPartner() {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        // autoplay: true,
-        speed: 2000,
+        autoplay: true,
+        speed: 3000,
         autoplaySpeed: 2000,
         cssEase: "linear",
+        infinite:true,
         responsive: [
             {
               breakpoint: 1024,

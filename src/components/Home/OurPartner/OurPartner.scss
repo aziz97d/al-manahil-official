@@ -4,6 +4,12 @@
   margin-top: 50px;
   text-align: center;
   border-top: #00ad5185 5px dotted;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 20px;
+  .slick-next:before, .slick-prev:before {
+    display: none;
+  }
 
   h2{
     color: #00AD50;
@@ -27,8 +33,13 @@
 
 
 @media screen and (max-width: 767px){
-  .p-slider.our-partner .p-slider-item img{
-    height: auto;
+  
+  .p-slider.our-partner{
 
+    .p-slider-item img{
+      height: auto;
+  
+    }
   }
+   
 }

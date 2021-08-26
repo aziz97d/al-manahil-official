@@ -18,7 +18,7 @@ const Footer = () => {
       <svg
         className="footer-shape"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 220"
+        viewBox="0 0 1440 250"
       >
         <path
           fill="#E1ECF9"
@@ -123,8 +123,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            Copyright ©2021 All rights reserved | This template is made with by
-            Abdul Aziz
+            Copyright ©2021 All rights reserved | Al Manahil Welfare Foundation
+            <br /> Developed by <span>Abdul Aziz</span>
           </p>
           <div className="navigation">
             <Link to="/" className="navigation-item">

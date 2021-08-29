@@ -9,8 +9,10 @@ import {
 } from "react-icons/gi";
 import {
   FaMosque,
-  FaHouseDamage
+  FaHouseDamage,
+  FaClock, FaArrowRight
 } from "react-icons/fa";
+
 import {
   GiWaterTank
 } from "react-icons/gi";
@@ -51,7 +53,8 @@ function OurProgress() {
             <p>Mosque</p>
           </div>
         </div>
-        <Link className="button-info">View More</Link>
+        {/* <Link className="button-info">View More</Link> */}
+        <a className="Read-more-btn button-info">View More <FaArrowRight className="Read-more-icon" /> </a>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
         <path

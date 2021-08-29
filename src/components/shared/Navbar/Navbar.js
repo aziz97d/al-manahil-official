@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from './../../../images/amwfb logo (2).png'
 import {
   AiFillFacebook,
   AiFillTwitterSquare,
@@ -7,7 +8,7 @@ import {
   AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
-import {FaPhone,FaBars} from "react-icons/fa";
+import {FaPhone,FaBars,FaShoppingBasket} from "react-icons/fa";
 
 import "./Navbar.scss";
 // import {
@@ -66,10 +67,21 @@ function Navbar() {
   return (
     <div className={navbarClasses.join(" ")}>
     <div className="navbar">
-      {/* <div className={navbarClasses.join(" ")}> */}
+    <div id="nav-bottom" className="nav-bottom"> 
+        <div className="contact-info">
+          <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
+        </div>
+          <ul className="nav-social-icons">
+            <li className="social-icon"><AiFillFacebook /></li>
+            <li className="social-icon"><AiFillYoutube /></li>
+            <li className="social-icon"><AiFillInstagram /></li>
+            <li className="social-icon"><AiFillTwitterSquare/></li>
+          </ul>
+      </div>
+
       <div className="nav-container">
       <div className='brand-logo'>
-          <img src='https://amwfb.org/wp-content/uploads/2020/06/logo.png' />
+          <img src={logo} />
         </div>
         <button id="nav-btn" className="nav-bar">
         <FaBars  />
@@ -102,21 +114,13 @@ function Navbar() {
           <li>
             <Link className="nav-item nav-button sign-in-button">Sign In</Link>
           </li>
+          <li>
+            <FaShoppingBasket className="nav-item" />
+          </li>
         </ul>
       
       </div>
-      <div id="nav-bottom" className="nav-bottom"> 
-        <div className="contact-info">
-          <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
-        </div>
-          <ul className="nav-social-icons">
-            <li className="social-icon"><AiFillFacebook /></li>
-            <li className="social-icon"><AiFillYoutube /></li>
-            <li className="social-icon"><AiFillInstagram /></li>
-            <li className="social-icon"><AiFillTwitterSquare/></li>
-          </ul>
       </div>
-    </div>
     </div>
   );
 }

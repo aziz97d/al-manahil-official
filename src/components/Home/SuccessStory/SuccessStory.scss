@@ -1,7 +1,7 @@
 
 
 .success-story{
-    width: 80%;
+    width: 100%;
     padding: 0 10%;
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -194,7 +194,7 @@
 
   @media screen and (max-width: 767px){
     .success-story{
-      width: 90%;
+      width: 100%;
       padding: 10px 5%;
       grid-template-columns: 1fr;
 

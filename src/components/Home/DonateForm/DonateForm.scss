@@ -1,104 +1,79 @@
 .donate-form{
-    width: 80%;
-    padding: 0 10%;
-    height: 60px;
-    background-color: #aeb6c0;
+    width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 15px;
+    grid-template-columns: 1.3fr 4fr;
     margin-top: -5px;
     justify-content: space-between;
+    background-color: #00ad51a2;
+
 
     .donate-form-text{
         width: 100%;
-        height: 30px;
-        background-color: #00AD50;
+        // height: 60px;
         color: white;
         text-transform: uppercase;
-        font-weight: 500;
+        background-color: #00AD50;
+        font-weight: 600;
         font-size: 20px;
         display: flex;
         align-items: center; 
         justify-content: center;
        
     }
-
-    .donate-input{
-        max-width:300px ;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        .taka-sign{
-            height: 30px;
-            width: 30px;
-            text-align: center;
-            background-color: #00AD50;
-            color: white;
-        }
-        input[type='text']{
-            width: 100%;
-            height: 25px;
-        }
-        select{
-            width: 100%;
-            height: 30px;
-        }
-    }
-    .donate-button{
-        width: 100%;
-        height: 28px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .donate-form-body{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+        padding: 10px 10px;
         
-        a{
-            text-decoration: none;
-            color: #00AD50;
-            border: 2px solid #00AD50;
-            cursor: pointer;
-            transition: all 0.5s ease;
-            text-transform: uppercase;
-            font-weight: 500;
-            text-align: center;
-            padding: 0 15px;
-            &:hover{
-                background-color: #00AD50;
-                color: white;
-               
+        .donate-form-img{
+            position: relative;
+            img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
             }
         }
-
-        img{
-            width: 80px;
-            height: 80px;
-            z-index: 10;
-        }
-        
-
-        
-    }
+    }    
 }
 
+input,
+select option,
+select {
+  width: 100%;
+  padding: .5em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  transition: all 0.35s ease-in-out;
+  font-size: 18px;
+  
+}
+input:focus {
+    outline: 0;
+    border-color: #00AD50;
+  }
+select:focus,
+select:active {
+outline: 0;
+}
+input[type="button"]{
+    background-color: #F57920;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
 @media screen and (max-width: 767px){
     .donate-form{
-        width: 90%;
-        padding: 0 5%;
-        height: 50px;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 5px;
-        .donate-form-text{
-            display: none;
-        }
+        grid-template-columns: 1fr;
 
-        .donate-button{
-            justify-content: center;
-            a{
-                padding: 0 2px;
-            }
-            img{
-                display: none;
-            }
+        .donate-form-body{
+            grid-template-columns: 1fr;
         }
     }
     

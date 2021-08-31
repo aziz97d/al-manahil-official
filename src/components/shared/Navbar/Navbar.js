@@ -8,33 +8,27 @@ import {
   AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
-import {FaPhone,FaBars,FaShoppingBasket} from "react-icons/fa";
-
+import {FaPhone,FaBars,FaShoppingBasket,FaRegUserCircle} from "react-icons/fa";
 import "./Navbar.scss";
-// import {
-//   IoMailOutline,
-//   IoLocationOutline,
-//   IoCallOutline,
-// } from "react-icons/io5";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  let navbarClasses = ["is-show-nav"];
+  let navbarClasses = ["nav-container"];
   if (scrolled) {
     navbarClasses.push("scrolled");
   }
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 200) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  // const handleScroll = () => {
+  //   const offset = window.scrollY;
+  //   if (offset > 200) {
+  //     setScrolled(true);
+  //   } else {
+  //     setScrolled(false);
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
     
-  });
+  // });
 
   useEffect(() =>{
     //isShowed prevent multiple times call useEffect
@@ -50,9 +44,7 @@ function Navbar() {
         navUl.classList.toggle('show-menu');
         navRight.classList.toggle('show-menu');
         navBottom.classList.toggle('show-menu');
-        
       }
-      
       return;
     });
 
@@ -61,13 +53,9 @@ function Navbar() {
     }
   })
 
-  
-
-  
   return (
-    <div className={navbarClasses.join(" ")}>
     <div className="navbar">
-    <div id="nav-bottom" className="nav-bottom"> 
+      <div id="nav-bottom" className="nav-bottom"> 
         <div className="contact-info">
           <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
         </div>
@@ -79,8 +67,8 @@ function Navbar() {
           </ul>
       </div>
 
-      <div className="nav-container">
-      <div className='brand-logo'>
+      <div className={navbarClasses.join(" ")}>
+        <div className='brand-logo'>
           <img src={logo} />
         </div>
         <button id="nav-btn" className="nav-bar">
@@ -105,21 +93,19 @@ function Navbar() {
           <li>
             <Link className="nav-item">Blog</Link>
           </li>
+          <li>
+            <Link className="nav-item nav-button donate-button">Donate</Link>
+          </li>
         </ul>
 
         <ul id="nav-right" className="nav-right">
           <li>
-            <Link className="nav-item nav-button donate-button">Donate</Link>
+            <Link className="nav-item nav-icon"><FaRegUserCircle /></Link>
           </li>
           <li>
-            <Link className="nav-item nav-button sign-in-button">Sign In</Link>
-          </li>
-          <li>
-            <FaShoppingBasket className="nav-item" />
+          <Link className="nav-item nav-icon"><FaShoppingBasket /></Link>
           </li>
         </ul>
-      
-      </div>
       </div>
     </div>
   );

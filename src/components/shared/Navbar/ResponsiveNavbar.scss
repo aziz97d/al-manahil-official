@@ -1,0 +1,109 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #00AD50;
+    overflow-x: hidden !important;
+    transition: 0.4s;
+    padding-top: 60px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+
+    font-family: 'Raleway';
+
+    .nav-bar-close{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      
+
+      button{
+        background:transparent;
+        border: 0;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+        margin-right: 5px;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+
+    .sidenav__logo{
+      img{
+        width: 120px;
+      }
+    } 
+
+    .nav-ul{
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      .nav-item{
+        // background-color: #009444;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        color: #fff;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        padding: 7px 20px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        height: 35px;
+      }
+      
+    }  
+    .nav-feature{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0px;
+      .nav-icon-button{
+        padding:10px 15px;
+        font-size: 22px;
+        // border-radius: 5?px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        color: #F57920;
+        &:first-child{
+          background-color: #F57920;
+          color: #fff;
+        }
+      }
+    }  
+  }
+
+  .brand-orange-button{
+    // margin-top: 5px;
+    background-color: #F57920 !important;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 767px){
+    .sidenav {
+      display: flex;
+    }
+  }

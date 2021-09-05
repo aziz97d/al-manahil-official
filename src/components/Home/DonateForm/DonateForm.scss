@@ -30,6 +30,9 @@
         .donate-form-img{
             position: relative;
             img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -71,10 +74,27 @@ input[type="button"]{
 @media screen and (max-width: 767px){
     .donate-form{
         grid-template-columns: 1fr;
+        padding-bottom: 70px;
 
         .donate-form-body{
             grid-template-columns: 1fr;
+
+            .donate-form-img{
+                img{
+                    // left: 50%;
+                    // top: 50%;
+                    width: 80px;
+                    height: 80px;
+                    transform: translate(-50%,-10%);
+                    
+                }
+            }
         }
+    }
+    input,
+    select option,
+    select {
+        padding: .3em;
     }
     
 }

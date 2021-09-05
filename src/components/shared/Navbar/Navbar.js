@@ -7,9 +7,11 @@ import {
   AiFillInstagram,
   AiFillYoutube,
   AiFillLinkedin,
+  AiOutlineClose
 } from "react-icons/ai";
-import {FaPhone,FaBars,FaShoppingBasket,FaRegUserCircle} from "react-icons/fa";
+import {FaPhone,FaBars,FaShoppingBasket,FaRegUserCircle,FaArrowLeft} from "react-icons/fa";
 import "./Navbar.scss";
+import "./ResponsiveNavbar.scss"
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,27 +37,48 @@ function Navbar() {
     let isShowed = false;
 
     const navUl = document.getElementById('nav-ul');
-    const navRight = document.getElementById('nav-right');
-    const navBottom = document.getElementById('nav-bottom');
+    // const navRight = document.getElementById('nav-right');
+    const navTop = document.getElementById('nav-top');
     const navBtn = document.getElementById('nav-btn');
+    const navCloseBtn = document.getElementById('nav-close-btn');
     navBtn.addEventListener('click', ()=>{
 
       if(!isShowed){
-        navUl.classList.toggle('show-menu');
-        navRight.classList.toggle('show-menu');
-        navBottom.classList.toggle('show-menu');
+        // navUl.classList.toggle('show-menu');
+        // // navRight.classList.toggle('show-menu');
+        // navTop.classList.toggle('show-menu');
+        openNav()
       }
       return;
     });
+    navCloseBtn.addEventListener('click', ()=>{
+
+      if(!isShowed){
+        // navUl.classList.toggle('show-menu');
+        // // navRight.classList.toggle('show-menu');
+        // navTop.classList.toggle('show-menu');
+        closeNav()
+      }
+      return;
+    });
+    
 
     return () =>{
       isShowed = true;
     }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    
   })
 
   return (
+    <div>
     <div className="navbar">
-      <div id="nav-bottom" className="nav-bottom"> 
+      <div id="nav-top" className="nav-top"> 
         <div className="contact-info">
           <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
         </div>
@@ -71,9 +94,11 @@ function Navbar() {
         <div className='brand-logo'>
           <img src={logo} />
         </div>
-        <button id="nav-btn" className="nav-bar">
+        
+        <button id="nav-btn" onclick="openNav()" className="nav-bar nav-show-icon">
         <FaBars  />
         </button>
+        
         <ul id="nav-ul" className="nav-ul">
           <li>
             <Link className="nav-item">Home</Link>
@@ -96,9 +121,6 @@ function Navbar() {
           <li>
             <Link className="nav-item nav-button donate-button">Donate</Link>
           </li>
-        </ul>
-
-        <ul id="nav-right" className="nav-right">
           <li>
             <Link className="nav-item nav-icon"><FaRegUserCircle /></Link>
           </li>
@@ -106,8 +128,48 @@ function Navbar() {
           <Link className="nav-item nav-icon"><FaShoppingBasket /></Link>
           </li>
         </ul>
+
       </div>
-    </div>
+
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <div className="nav-bar-close">
+
+          <button id="nav-close-btn">
+            <FaArrowLeft  />
+          </button>
+        </div>
+      <div className='sidenav__logo'>
+          <img src={logo} />
+        </div>
+      <ul id="nav-ul" className="nav-ul">
+          <li>
+            <Link className="nav-item">Home</Link>
+          </li>
+          <li>
+            <Link className="nav-item">Features</Link>
+          </li>
+          <li>
+            <Link className="nav-item">Get Involved</Link>
+          </li>
+          <li>
+            <Link className="nav-item">Volunteer</Link>
+          </li>
+          <li>
+            <Link className="nav-item">Portfolio</Link>
+          </li>
+          <li>
+            <Link className="nav-item">Blog</Link>
+          </li>
+        </ul>
+        <Link className="nav-item brand-orange-button">Donate</Link>
+        <div className="nav-feature">
+            <Link className="nav-icon-button"><FaRegUserCircle /></Link>
+            <Link className="nav-icon-button"><FaShoppingBasket /></Link>
+        </div>
+      </div>
+    
+      </div>
   );
 }
 

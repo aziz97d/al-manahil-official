@@ -197,16 +197,19 @@
       width: 100%;
       padding: 10px 5%;
       grid-template-columns: 1fr;
-
-
+      font-size: 17px;
+      
       .media-coverage{
 
         .media-card-list{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           // width: 80%;
           .media-card{
             margin-right: 0;
             width: 90%;
-            font-size: 18px;
+            
           }
         }
       }

@@ -8,7 +8,7 @@
     background-color: #00AD50;
     overflow-x: hidden !important;
     transition: 0.4s;
-    padding-top: 60px;
+    // padding-top: 60px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,8 @@
       width: 100%;
       display: flex;
       justify-content: flex-end;
-      
+      margin-bottom:  20px;
+      padding: 10px;
 
       button{
         background:transparent;
@@ -29,7 +30,7 @@
         color: #fff;
         cursor: pointer;
         font-size: 25px;
-        margin-right: 5px;
+        // margin: 5px;
         &:focus{
           outline: none;
         }

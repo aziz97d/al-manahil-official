@@ -123,8 +123,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            Copyright ©2021 All rights reserved | Al Manahil Welfare Foundation
-            <br /> Developed by <span>Abdul Aziz</span>
+             Developed by <a href="#" className="developer-link">Abdul Aziz</a>
           </p>
           <div className="navigation">
             <Link to="/" className="navigation-item">

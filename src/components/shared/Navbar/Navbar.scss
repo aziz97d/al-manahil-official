@@ -44,6 +44,7 @@
     list-style: none;
     align-items: center;
     background-color: #00AD50;
+    margin: 0;
     .nav-item {
       padding: 0 10px;
       text-decoration: none;
@@ -51,6 +52,15 @@
       color: #fff;
 
       &:hover {
+      }
+    }
+    .nav-feature{
+      margin-left: 25px;
+
+      .nav-icon-button{
+        padding: 15px;
+        font-size: 22px;
+        color: #ffffff;
       }
     }
     .nav-item.nav-icon {
@@ -78,7 +88,7 @@
   font-family: 'Nunito Sans', sans-serif;
   border-bottom: 1px solid #00AD50;
 
-  display: none;
+  // display: none;
 
   .contact-info{
     color: #00AD50;
@@ -115,7 +125,10 @@
   .nav-container{
     
     .brand-logo{
-      margin-top: 10px;
+      // margin-top: 10px;
+      img{
+        height: 100px;
+      }
     }
     .nav-show-icon{
       display: block;

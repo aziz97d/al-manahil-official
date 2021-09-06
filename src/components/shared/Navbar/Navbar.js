@@ -119,19 +119,19 @@ function Navbar() {
             <Link className="nav-item">Blog</Link>
           </li>
           <li>
-            <Link className="nav-item nav-button donate-button">Donate</Link>
+            <Link className="nav-item brand-orange-button">Donate</Link>
           </li>
-          <li>
-            <Link className="nav-item nav-icon"><FaRegUserCircle /></Link>
-          </li>
-          <li>
-          <Link className="nav-item nav-icon"><FaShoppingBasket /></Link>
-          </li>
+          <div className="nav-feature">
+            <Link className="nav-icon-button"><FaRegUserCircle /></Link>
+            <Link className="nav-icon-button"><FaShoppingBasket /></Link>
+          </div>
         </ul>
 
       </div>
 
       </div>
+
+      {/* --------- Mobile Responsive Menu Start-------- */}
       <div id="mySidenav" class="sidenav">
         <div className="nav-bar-close">
 
@@ -162,12 +162,13 @@ function Navbar() {
             <Link className="nav-item">Blog</Link>
           </li>
         </ul>
-        <Link className="nav-item brand-orange-button">Donate</Link>
+        
         <div className="nav-feature">
             <Link className="nav-icon-button"><FaRegUserCircle /></Link>
             <Link className="nav-icon-button"><FaShoppingBasket /></Link>
         </div>
       </div>
+      {/* --------- Mobile Responsive Menu Start-------- */}
     
       </div>
   );

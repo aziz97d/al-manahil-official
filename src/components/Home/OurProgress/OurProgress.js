@@ -13,10 +13,9 @@ import {
   FaClock, FaArrowRight
 } from "react-icons/fa";
 
-import {
-  GiWaterTank
-} from "react-icons/gi";
+
 import { Link } from "react-router-dom";
+import ProgressList from "./ProgressList.js";
 
 function OurProgress() {
   
@@ -31,30 +30,10 @@ function OurProgress() {
           started working in 1999.
         </p>
 
-        <div className="progress-list">
-          <div className="our-progress-item">
-            <FaHouseDamage className="icon" />
-            <h1><CountUp end={3000} duration={4}/>+</h1>
-            <p>Shelter Houses</p>
-          </div>
-          <div className="our-progress-item">
-            <GiWaterTank className="icon" />
-            <h1><CountUp end={3000} duration={4}/>+</h1>
-            <p>Water well</p>
-          </div>
-          <div className="our-progress-item">
-            <GiClover className="icon" />
-            <h1><CountUp end={1} duration={2}/>M+</h1>
-            <p>Beneficiaries</p>
-          </div>
-          <div className="our-progress-item">
-            <FaMosque className="icon" />
-            <h1><CountUp end={3000} duration={4}/>+</h1>
-            <p>Mosque</p>
-          </div>
-        </div>
-        {/* <Link className="button-info">View More</Link> */}
-        <a className="Read-more-btn button-info">View More <FaArrowRight className="Read-more-icon" /> </a>
+        <>
+        <ProgressList />
+        </>
+        <Link className="Read-more-btn button-info">View More <FaArrowRight className="Read-more-icon" /> </Link>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
         <path

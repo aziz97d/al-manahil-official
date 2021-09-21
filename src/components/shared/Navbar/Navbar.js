@@ -13,7 +13,13 @@ import {FaPhone,FaBars,FaShoppingBasket,FaRegUserCircle,FaArrowLeft} from "react
 import "./Navbar.scss";
 import "./ResponsiveNavbar.scss"
 
+import { useTranslation, Trans } from 'react-i18next';
+const lngs = {
+  en: { nativeName: 'English' },
+  bn: { nativeName: 'বাংলা' }
+};
 function Navbar() {
+  const {t, i18n} = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   let navbarClasses = ["nav-container"];
   if (scrolled) {
@@ -75,6 +81,9 @@ function Navbar() {
     
   })
 
+  function handleChange(e){
+    i18n.changeLanguage(e.target.value)
+  }  
   return (
     <div>
     <div className="navbar">
@@ -82,7 +91,14 @@ function Navbar() {
         <div className="contact-info">
           <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
         </div>
-          <ul className="nav-social-icons">
+        <div>
+        <select onChange={handleChange}>
+                <option value="en">ENG</option>
+                <option value="bn">বাংলা</option>
+                <option value="ar">عربي</option>
+              </select>
+        </div>
+          <ul className="nav-social-icons">  
             <li className="social-icon"><AiFillFacebook /></li>
             <li className="social-icon"><AiFillYoutube /></li>
             <li className="social-icon"><AiFillInstagram /></li>
@@ -101,25 +117,19 @@ function Navbar() {
         
         <ul id="nav-ul" className="nav-ul">
           <li>
-            <Link className="nav-item">Home</Link>
+            <Link to="/home" className="nav-item">{t('menu.home')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Features</Link>
+            <Link className="nav-item">{t('menu.aboutUs')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Get Involved</Link>
+            <Link to="/projects" className="nav-item">{t('menu.ourProjects')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Volunteer</Link>
+            <Link className="nav-item">{t('menu.contactUs')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Portfolio</Link>
-          </li>
-          <li>
-            <Link className="nav-item">Blog</Link>
-          </li>
-          <li>
-            <Link className="nav-item brand-orange-button">Donate</Link>
+            <Link className="nav-item brand-orange-button">{t('buttons.donate')}</Link>
           </li>
           <div className="nav-feature">
             <Link className="nav-icon-button"><FaRegUserCircle /></Link>
@@ -143,23 +153,20 @@ function Navbar() {
           <img src={logo} />
         </div>
       <ul id="nav-ul" className="nav-ul">
-          <li>
-            <Link className="nav-item">Home</Link>
+        <li>
+            <Link to="/home" className="nav-item">{t('menu.home')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Features</Link>
+            <Link className="nav-item">{t('menu.aboutUs')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Get Involved</Link>
+            <Link to="/projects" className="nav-item">{t('menu.ourProjects')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Volunteer</Link>
+            <Link className="nav-item">{t('menu.contactUs')}</Link>
           </li>
           <li>
-            <Link className="nav-item">Portfolio</Link>
-          </li>
-          <li>
-            <Link className="nav-item">Blog</Link>
+            <Link className="nav-item brand-orange-button">{t('buttons.donate')}</Link>
           </li>
         </ul>
         

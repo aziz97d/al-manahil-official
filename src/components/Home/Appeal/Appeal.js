@@ -1,5 +1,5 @@
-import React from 'react'
-import './Appeal.scss'
+import React from 'react';
+import './Appeal.scss';
 function Appeal() {
 
     return (

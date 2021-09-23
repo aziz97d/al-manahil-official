@@ -102,21 +102,19 @@ const Footer = () => {
               <input type="button" value="Subscribe" />
             </div>
             <div className="social">
-              <Link className="nav-item social-icon" to="/">
+              <a className="nav-item social-icon" target="_blank" href="https://www.facebook.com/amwfborg/">
                 <AiFillFacebook />
-              </Link>
-              <Link className="nav-item social-icon" to="/">
+              </a>
+              <a className="nav-item social-icon" target="_blank" href="https://twitter.com/amwfborg/">
                 <AiFillTwitterSquare />
-              </Link>
-              <Link className="nav-item social-icon" to="/">
+              </a>
+              <a className="nav-item social-icon" target="_blank" href="https://www.instagram.com/amwfb/">
                 <AiFillInstagram />
-              </Link>
-              <Link className="nav-item social-icon" to="/">
+              </a>
+              <a className="nav-item social-icon" target="_blank" href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg">
                 <AiFillYoutube />
-              </Link>
-              <Link className="nav-item social-icon" to="/">
-                <AiFillLinkedin />
-              </Link>
+              </a>
+             
             </div>
           </div>
         </div>

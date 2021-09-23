@@ -9,11 +9,23 @@
     justify-items: center;
     .appeal{
         width: 100%;
-        height: 280px;
+        // height: 300px;
         padding: 10px 10px 3px;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 4px 1px rgba(99, 99, 99, 0.144);
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s all ease;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(-8px);
+            .appeal-sub{
+                img{
+                    // transform: scale(1.1);
+                }
+            }
+        }
         .appeal-sub{
             width: 100%;
             height: 100%;
@@ -22,6 +34,10 @@
             // border-bottom: 4px solid #0F95A9;
             img{
                 width: 100%;
+                height: 140px;
+                object-fit: cover;
+                object-position: center;
+                transition: 0.2s;
             }
 
             p{

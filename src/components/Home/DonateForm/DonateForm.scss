@@ -5,7 +5,8 @@
     grid-template-columns: 1.3fr 4fr;
     margin-top: -5px;
     justify-content: space-between;
-    background-color: #00ad51a2;
+    // background-color: #00ad51a2;
+    // border: 1px solid #00ad51a2;
 
 
     .donate-form-text{
@@ -13,7 +14,7 @@
         // height: 60px;
         color: white;
         text-transform: uppercase;
-        background-color: #00AD50;
+        // background-color: #00AD50;
         font-weight: 600;
         font-size: 20px;
         display: flex;
@@ -49,7 +50,7 @@ select {
   padding: .5em;
   line-height: 1.4;
   background-color: #f9f9f9;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #00AD50;
   border-radius: 3px;
   transition: all 0.35s ease-in-out;
   font-size: 18px;
@@ -57,10 +58,11 @@ select {
 }
 input:focus {
     outline: 0;
-    border-color: #00AD50;
+    border-color: #00AD50 ;
   }
 select:focus,
 select:active {
+    border-color: #00AD50 ;
 outline: 0;
 }
 input[type="button"]{
@@ -70,6 +72,7 @@ input[type="button"]{
     font-weight: 600;
     letter-spacing: 2px;
     cursor: pointer;
+    border: none;
 }
 @media screen and (max-width: 767px){
     .donate-form{

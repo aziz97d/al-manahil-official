@@ -99,10 +99,19 @@ function Navbar() {
               </select>
         </div>
           <ul className="nav-social-icons">  
-            <li className="social-icon"><AiFillFacebook /></li>
-            <li className="social-icon"><AiFillYoutube /></li>
-            <li className="social-icon"><AiFillInstagram /></li>
-            <li className="social-icon"><AiFillTwitterSquare/></li>
+              <a className="social-icon" target="_blank" href="https://www.facebook.com/amwfborg">
+                <AiFillFacebook />
+              </a>
+              <a className="social-icon" target="_blank" href="https://twitter.com/amwfborg">
+                <AiFillTwitterSquare />
+              </a>
+              <a className="social-icon" target="_blank" href="https://www.instagram.com/amwfb">
+                <AiFillInstagram />
+              </a>
+              <a className="social-icon" target="_blank" href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg">
+                <AiFillYoutube />
+              </a>
+            
           </ul>
       </div>
 

@@ -1,0 +1,63 @@
+.appeal-details-header{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        opacity: 0.9;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        font-size: 35px;
+        color: #fff;
+        background-color: #00ad51a2 ;
+        text-transform: uppercase;
+        opacity: 1 !important;
+        margin: 0;
+        padding: 5px 0;
+    }
+}
+.appeal-details-body{
+    padding: 0 10%;
+    text-align: center;
+    h1{
+        // margin: 10px 0;
+        color: #00AD50;
+    }
+    .zk-policy{
+        width: 100px;
+    }
+    p{
+        font-size: 17px;
+    }
+    span{
+        color: #00AD50;
+        font-weight: 600;
+    }
+}
+
+.our-partner.p-slider{
+    h2{
+        margin: 0;
+    }
+    p{
+        font-size: 17px;
+    }
+    .p-slider-item{
+        h2{
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}

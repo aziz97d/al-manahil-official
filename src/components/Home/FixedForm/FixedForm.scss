@@ -1,0 +1,30 @@
+.fixed-form{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: 0.3s all ease;
+    display: none;
+    .fixed-form-donate-button{
+        justify-content: center;
+        display: none;
+        button{
+            background-color: #00AD50;
+            outline: none;
+            border: none;
+            padding: 5px 20px;
+            color: #ffffff;
+            border-radius: 10px 10px 0 0 ;
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .fixed-form{
+        bottom: -335px;
+        .fixed-form-donate-button{
+            display: flex;
+            
+        }
+    }
+}

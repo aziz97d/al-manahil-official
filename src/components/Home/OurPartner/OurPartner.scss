@@ -7,6 +7,10 @@
   position: relative;
   z-index: -1;
   margin-bottom: 20px;
+
+  .slick-slide img{
+    height: 100%;
+}
   .slick-next:before, .slick-prev:before {
     display: none;
   }

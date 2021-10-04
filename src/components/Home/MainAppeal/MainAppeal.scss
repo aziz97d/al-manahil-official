@@ -1,0 +1,61 @@
+.main-appeal{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    padding: 2% 10%;
+    background-color: #e1ecf9;
+    
+    .main-appeal-card{
+        min-height: 35px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+        &:nth-child(odd){
+            background-color: #00AD50;
+            .main-appeal-card-button{
+                color: #fff;
+                border: 3px solid #fff;
+            }
+        }
+        &:nth-child(even){
+            background-color: #DBDBDB;
+            color: #000;
+
+            .main-appeal-card-button{
+                color: #000;
+                border: 3px solid #000;
+            }
+        }
+
+        .main-appeal-card-icon{
+            font-size: 50px;
+        }
+        h2,p{
+            text-align: center;
+        }
+        .main-appeal-card-button{
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            
+            
+            .button-icon{
+                margin-left: 5px;
+                transition: 0.5s all ease;
+            }
+            &:hover .button-icon{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+
+   
+}

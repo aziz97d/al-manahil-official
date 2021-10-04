@@ -4,7 +4,7 @@ import jkPolicy from '../../../images/zkpolicyManahil.png'
 
 export default function DonateForm({isBackgroundColor}) {
     return (
-        <div style={{backgroundColor: isBackgroundColor ? '#00ad51a2': '#fff'}} className="donate-form">
+        <div style={{backgroundColor: isBackgroundColor ? '#5DCB90': '#fff'}} className="donate-form">
             <div style={{backgroundColor : isBackgroundColor ? '#00AD50' : '#fff', color: isBackgroundColor ? '#fff' : '#00AD50'}} className="donate-form-text">
                 <p>Donate to fund</p>
             </div>
@@ -24,7 +24,7 @@ export default function DonateForm({isBackgroundColor}) {
                 <input type="button" value="Donate" />
                 
                 <div className="donate-form-img">
-                    <img  src={jkPolicy} />
+                    <img  src={jkPolicy} alt="" />
                 </div>
                 
             </div>

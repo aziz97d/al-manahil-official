@@ -35,7 +35,7 @@ function OurProgress() {
         </>
         <Link className="Read-more-btn button-info">View More <FaArrowRight className="Read-more-icon" /> </Link>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1440 200">
         <path
           fill="#E1ECF9"
           fill-opacity="1"

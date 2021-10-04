@@ -20,32 +20,32 @@ function SuccessStory() {
                 <div className="media-card-list">
                     <div className="media-card">
                       <div className="media-card-body">
-                              <img className="media-card-image" src="https://basmah-bd.org/wp-content/uploads/2021/04/Banglatribune.png" />
+                              <img className="media-card-image" style={{background:'#345153'}} src="https://tbsnews.net/sites/all/themes/sloth/banner.png" />
                             
                             <div className="media-card-details">
-                                <h4>Manahil Activity In Covid-19</h4>
-                                <p>img elements must have text, or an empty string for decorative imagesimg elements must have an alt prop, either with meaningful text, or an empty string for decorative images</p>
+                                <h4>Al Manahil distributes relief worth Tk16cr amid pandemic</h4>
+                                <p>Al Manahil Welfare Foundation Bangladesh, a nonprofit humanitarian aid and solidarity organisation, extended their helping hands to the marginalised community during the ongoing Covid-19 global pandemic in Bangladesh.</p>
                             </div>
 
                       </div>
                       <div className="media-card-footer">
                       <a className="media-card-download">Download PDF</a>
-                        <Link className="media-card-read-more">Read More</Link>
+                        <a className="media-card-read-more" target="_blank" href="https://www.tbsnews.net/coronavirus-chronicle/covid-19-bangladesh/al-manahil-distributes-relief-worth-tk16cr-amid-pandemic">Read More</a>
                       </div>
                     </div>
                     <div className="media-card">
                       <div className="media-card-body">
-                              <img className="media-card-image" src="https://basmah-bd.org/wp-content/uploads/2021/04/Banglatribune.png" />
+                              <img className="media-card-image" src="https://img.thedailystar.net/sites/all/themes/sloth/logo.svg" />
                             
                             <div className="media-card-details">
-                                <h4>Manahil Activity In Covid-19</h4>
-                                <p>img elements must have text, or an empty string for decorative imagesimg elements must have an alt prop, either with meaningful text, or an empty string for decorative images</p>
+                                <h4>They too deserve a dignified burial</h4>
+                                <p>With deaths due to Covid-19 rising in Chattogram, bereaved families are facing yet another grim reality -- not being able to bury their loved ones with full rituals due to the fear of exposing themselves to the virus. In many cases, families and community members have not been able to attend the funeral prayers either because of physical distancing measures or due to fear of the infection. </p>
                             </div>
 
                       </div>
                       <div className="media-card-footer">
                       <a className="media-card-download">Download PDF</a>
-                        <Link className="media-card-read-more">Read More</Link>
+                        <a className="media-card-read-more" target="_blank" href="https://www.thedailystar.net/city/news/they-too-deserve-dignified-burial-1910745">Read More</a>
                       </div>
                     </div>
                 

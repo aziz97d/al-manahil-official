@@ -1,25 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from './../../../images/amwfb logo (2).png'
+import logo from "./../../../images/amwfb logo (2).png";
 import {
   AiFillFacebook,
   AiFillTwitterSquare,
   AiFillInstagram,
   AiFillYoutube,
-  AiFillLinkedin,
-  AiOutlineClose
 } from "react-icons/ai";
-import {FaPhone,FaBars,FaShoppingBasket,FaRegUserCircle,FaArrowLeft} from "react-icons/fa";
+import {
+  FaPhone,
+  FaBars,
+  FaShoppingBasket,
+  FaRegUserCircle,
+  FaArrowLeft,
+} from "react-icons/fa";
 import "./Navbar.scss";
-import "./ResponsiveNavbar.scss"
+import "./ResponsiveNavbar.scss";
 
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation, Trans } from "react-i18next";
 const lngs = {
-  en: { nativeName: 'English' },
-  bn: { nativeName: 'বাংলা' }
+  en: { nativeName: "English" },
+  bn: { nativeName: "বাংলা" },
 };
 function Navbar() {
-  const {t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   let navbarClasses = ["nav-container"];
   if (scrolled) {
@@ -35,158 +39,195 @@ function Navbar() {
   // };
   // useEffect(() => {
   //   window.addEventListener("scroll", handleScroll);
-    
+
   // });
 
-  useEffect(() =>{
+  useEffect(() => {
     //isShowed prevent multiple times call useEffect
     let isShowed = false;
 
-    const navUl = document.getElementById('nav-ul');
+    const navUl = document.getElementById("nav-ul");
     // const navRight = document.getElementById('nav-right');
-    const navTop = document.getElementById('nav-top');
-    const navBtn = document.getElementById('nav-btn');
-    const navCloseBtn = document.getElementById('nav-close-btn');
-    navBtn.addEventListener('click', ()=>{
-
-      if(!isShowed){
+    const navTop = document.getElementById("nav-top");
+    const navBtn = document.getElementById("nav-btn");
+    const navCloseBtn = document.getElementById("nav-close-btn");
+    navBtn.addEventListener("click", () => {
+      if (!isShowed) {
         // navUl.classList.toggle('show-menu');
         // // navRight.classList.toggle('show-menu');
         // navTop.classList.toggle('show-menu');
-        openNav()
+        openNav();
       }
       return;
     });
-    navCloseBtn.addEventListener('click', ()=>{
-
-      if(!isShowed){
+    navCloseBtn.addEventListener("click", () => {
+      if (!isShowed) {
         // navUl.classList.toggle('show-menu');
         // // navRight.classList.toggle('show-menu');
         // navTop.classList.toggle('show-menu');
-        closeNav()
+        closeNav();
       }
       return;
     });
-    
 
-    return () =>{
+    return () => {
       isShowed = true;
-    }
+    };
     function openNav() {
       document.getElementById("mySidenav").style.width = "100%";
     }
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
-    
-  })
+  });
 
-  function handleChange(e){
-    i18n.changeLanguage(e.target.value)
-  }  
+  function handleChange(e) {
+    i18n.changeLanguage(e.target.value);
+  }
   return (
     <div>
-    <div className="navbar">
-      <div id="nav-top" className="nav-top"> 
-        <div className="contact-info">
-          <p>24/7 DONATION HOTLINE <span><FaPhone /></span> 03000 11 11 11</p>
-        </div>
-        <div>
-        <select onChange={handleChange}>
-                <option value="en">ENG</option>
-                <option value="bn">বাংলা</option>
-                <option value="ar">عربي</option>
-              </select>
-        </div>
-          <ul className="nav-social-icons">  
-              <a className="social-icon" target="_blank" href="https://www.facebook.com/amwfborg">
-                <AiFillFacebook />
-              </a>
-              <a className="social-icon" target="_blank" href="https://twitter.com/amwfborg">
-                <AiFillTwitterSquare />
-              </a>
-              <a className="social-icon" target="_blank" href="https://www.instagram.com/amwfb">
-                <AiFillInstagram />
-              </a>
-              <a className="social-icon" target="_blank" href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg">
-                <AiFillYoutube />
-              </a>
-            
-          </ul>
-      </div>
-
-      <div className={navbarClasses.join(" ")}>
-        <div className='brand-logo'>
-          <img src={logo} />
-        </div>
-        
-        <button id="nav-btn" onclick="openNav()" className="nav-bar nav-show-icon">
-        <FaBars  />
-        </button>
-        
-        <ul id="nav-ul" className="nav-ul">
-          <li>
-            <Link to="/home" className="nav-item">{t('menu.home')}</Link>
-          </li>
-          <li>
-            <Link className="nav-item">{t('menu.aboutUs')}</Link>
-          </li>
-          <li>
-            <Link to="/projects" className="nav-item">{t('menu.ourProjects')}</Link>
-          </li>
-          <li>
-            <Link className="nav-item">{t('menu.contactUs')}</Link>
-          </li>
-          <li>
-            <Link className="nav-item brand-orange-button">{t('buttons.donate')}</Link>
-          </li>
-          <div className="nav-feature">
-            <Link className="nav-icon-button"><FaRegUserCircle /></Link>
-            <Link className="nav-icon-button"><FaShoppingBasket /></Link>
+      <div className="navbar">
+        <div id="nav-top" className="nav-top">
+          <div className="contact-info">
+            <p>
+              24/7 DONATION HOTLINE{" "}
+              <span>
+                <FaPhone />
+              </span>{" "}
+              03000 11 11 11
+            </p>
           </div>
-        </ul>
+          <div>
+            <select onChange={handleChange}>
+              <option value="en">ENG</option>
+              <option value="bn">বাংলা</option>
+              <option value="ar">عربي</option>
+            </select>
+          </div>
+          <ul className="nav-social-icons">
+            <a
+              className="social-icon"
+              target="_blank"
+              href="https://www.facebook.com/amwfborg" rel="noreferrer"
+            >
+              <AiFillFacebook />
+            </a>
+            <a
+              className="social-icon"
+              target="_blank"
+              href="https://twitter.com/amwfborg" rel="noreferrer"
+            >
+              <AiFillTwitterSquare />
+            </a>
+            <a
+              className="social-icon"
+              target="_blank"
+              href="https://www.instagram.com/amwfb" rel="noreferrer"
+            >
+              <AiFillInstagram />
+            </a>
+            <a
+              className="social-icon"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg" rel="noreferrer"
+            >
+              <AiFillYoutube />
+            </a>
+          </ul>
+        </div>
 
-      </div>
+        <div className={navbarClasses.join(" ")}>
+          <div className="brand-logo">
+            <img src={logo} />
+          </div>
 
+          <button
+            id="nav-btn"
+            onclick="openNav()"
+            className="nav-bar nav-show-icon"
+          >
+            <FaBars />
+          </button>
+
+          <ul id="nav-ul" className="nav-ul">
+            <li>
+              <Link to="/home" className="nav-item">
+                {t("menu.home")}
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-item">{t("menu.aboutUs")}</Link>
+            </li>
+            <li>
+              <Link to="/projects" className="nav-item">
+                {t("menu.ourProjects")}
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-item">{t("menu.contactUs")}</Link>
+            </li>
+            <li>
+              <Link className="nav-item brand-orange-button">
+                {t("buttons.donate")}
+              </Link>
+            </li>
+            <div className="nav-feature">
+              <Link className="nav-icon-button">
+                <FaRegUserCircle />
+              </Link>
+              <Link className="nav-icon-button">
+                <FaShoppingBasket />
+              </Link>
+            </div>
+          </ul>
+        </div>
       </div>
 
       {/* --------- Mobile Responsive Menu Start-------- */}
       <div id="mySidenav" class="sidenav">
         <div className="nav-bar-close">
-
           <button id="nav-close-btn">
-            <FaArrowLeft  />
+            <FaArrowLeft />
           </button>
         </div>
-      <div className='sidenav__logo'>
+        <div className="sidenav__logo">
           <img src={logo} />
         </div>
-      <ul id="nav-ul" className="nav-ul">
-        <li>
-            <Link to="/home" className="nav-item">{t('menu.home')}</Link>
+        <ul id="nav-ul" className="nav-ul">
+          <li>
+            <Link to="/home" className="nav-item">
+              {t("menu.home")}
+            </Link>
           </li>
           <li>
-            <Link className="nav-item">{t('menu.aboutUs')}</Link>
+            <Link className="nav-item">{t("menu.aboutUs")}</Link>
           </li>
           <li>
-            <Link to="/projects" className="nav-item">{t('menu.ourProjects')}</Link>
+            <Link to="/projects" className="nav-item">
+              {t("menu.ourProjects")}
+            </Link>
           </li>
           <li>
-            <Link className="nav-item">{t('menu.contactUs')}</Link>
+            <Link className="nav-item">{t("menu.contactUs")}</Link>
           </li>
           <li>
-            <Link className="nav-item brand-orange-button">{t('buttons.donate')}</Link>
+            <Link className="nav-item brand-orange-button">
+              {t("buttons.donate")}
+            </Link>
           </li>
         </ul>
-        
+
         <div className="nav-feature">
-            <Link className="nav-icon-button"><FaRegUserCircle /></Link>
-            <Link className="nav-icon-button"><FaShoppingBasket /></Link>
+          <Link className="nav-icon-button">
+            <FaRegUserCircle />
+          </Link>
+          <Link className="nav-icon-button">
+            <FaShoppingBasket />
+          </Link>
         </div>
       </div>
       {/* --------- Mobile Responsive Menu Start-------- */}
-    
-      </div>
+    </div>
   );
 }
 

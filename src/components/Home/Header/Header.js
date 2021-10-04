@@ -1,43 +1,58 @@
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
 import Navbar from "../../shared/Navbar/Navbar.js";
-import DonateForm from '../DonateForm/DonateForm.js';
-import './Header.css'
-import sliderImage from '../../../images/slider image.png'
-import { FaArrowRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import DonateForm from "../DonateForm/DonateForm.js";
+import "./Header.css";
+import { FaDonate } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Header() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        accessibility: false
-      };
-    return (
-        <>
-        <Navbar></Navbar>
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 700,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    accessibility: false,
+    pauseOnHover: true,
+    fade: true,
+  };
+  return (
+    <>
+      <Navbar></Navbar>
       <div>
         <Slider {...settings}>
-          {/* <div className="slider-overlay"style={{backgroundImage:sliderImage}}>
-            <div>
-              <Link className="animated-donate-button">Donate Now 1 <FaArrowRight className="Read-more-icon" /> </Link>
-            </div>
-          </div> */}
-          <div>
-            <img className="slider-image" src="https://pennyappeal.org/storage/app/media/appeals/thirst-relief/2020-banners/banners-wo-ramadan-cta/penny-appeal---muharram-21---thirst-relief---website---desktop-banner.jpg"  alt="..."/>
+          <div className="slider-overlay">
+            <img
+              className="slider-image"
+              src="https://amwfb.org/wp-content/uploads/revslider/slider-1-scaled.jpg"
+              alt=""
+            />
+            <Link className="animated-donate-button">
+              Donate Now <FaDonate className="Read-more-icon" />{" "}
+            </Link>
           </div>
           <div>
-          <img className="slider-image" src="https://pennyappeal.org/storage/app/media/appeals/sadaqa-jariya/2020-banners/sadaqah-jariyah---desktop-website-banner.jpg" alt="..."/>
+            <img
+              className="slider-image"
+              src="https://amwfb.org/wp-content/uploads/revslider/slider-2-scaled.jpg"
+              alt=""
+            />
           </div>
-          
+          <div>
+            <img
+              className="slider-image"
+              src="https://amwfb.org/wp-content/uploads/revslider/water.jpg"
+              alt=""
+            />
+          </div>
         </Slider>
       </div>
       <DonateForm isBackgroundColor={true} />
-      </>
-    );
-  }
+    </>
+  );
+}
 
-
-export default Header
+export default Header;

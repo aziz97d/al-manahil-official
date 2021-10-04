@@ -28,6 +28,7 @@
               height: 120px;
               border-radius: 50%;
               border:2px solid #00AD50;
+              object-fit: contain !important;
             }
             .media-card-details{
               padding: 0 15px;
@@ -90,6 +91,7 @@
           .social-icon{
             margin:0 10px;
             cursor: pointer;
+            transition: 0.3s all ease;
             &:hover{
               transform: scale(1.1);
             }
@@ -133,7 +135,7 @@
               &:nth-child(2){
                 margin:12px 0 5px;
                 display: -webkit-box;
-                -webkit-line-clamp: 2;
+                -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
 
@@ -210,6 +212,9 @@
             margin-right: 0;
             width: 90%;
             
+            .media-card-body{
+              flex-direction: column;
+            }
           }
         }
       }

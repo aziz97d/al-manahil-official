@@ -11,13 +11,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E1ECF9;
-  
+  background-color: #e1ecf9;
+
   .progress-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+
     // margin: 50px 0;
     .our-progress-item {
       // background-color: #00334f1f;
@@ -33,7 +33,6 @@
         margin: 5px 0;
         font-size: 40px;
         font-weight: 500;
-        
       }
       p {
         margin: 2px 0;
@@ -47,39 +46,37 @@
 }
 
 // .button-info {
-  // text-decoration: none;
-  // padding: 12px 18px;
-  // border-radius: 30px;
-  // 
-  // color: #00344f;
-  // &:hover {
-  //   color: white;
-  //   background-color: #00344f;
-  // }
-  
-  .button-info.Read-more-btn{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: #000;
-    padding: 12px 18px;
-    border-radius: 30px;
-    border: 1px solid #000;
-    text-decoration: none;
-    
-    &:hover{
-      margin-right: 0px; 
-    }
-    .Read-more-icon{
-      opacity: 0;
-      margin-left: -10px;
-      transition: all 0.4s ease;
-      
-    }
-    &:hover .Read-more-icon{
-      opacity: 1;
-      margin-left: 5px;
-      
-    }
+// text-decoration: none;
+// padding: 12px 18px;
+// border-radius: 30px;
+//
+// color: #00344f;
+// &:hover {
+//   color: white;
+//   background-color: #00344f;
+// }
+
+.button-info.Read-more-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  text-decoration: none;
+
+  &:hover {
+    margin-right: 0px;
   }
+  .Read-more-icon {
+    opacity: 0;
+    margin-left: -10px;
+    transition: all 0.4s ease;
+  }
+  &:hover .Read-more-icon {
+    opacity: 1;
+    margin-left: 5px;
+  }
+}
 // }

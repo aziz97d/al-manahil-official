@@ -5,6 +5,8 @@ import DonateForm from "../DonateForm/DonateForm.js";
 import Navbar from "../../shared/Navbar/Navbar.js";
 import headerImage from "../../../images/water picture.jpg";
 import Footer from "../../shared/Footer/Footer.js";
+import { useParams } from "react-router";
+import appealData from "../../../data/AppealData.js";
 const AppealDetails = () => {
   const settings = {
     dots: true,
@@ -43,17 +45,33 @@ const AppealDetails = () => {
       },
     ],
   };
+
+  let { appealId } = useParams();
+  const {
+    appealHeaderImageUrl,
+    appealHeaderTitle,
+    header,
+    subInfoFirst,
+    subInfoSecond,
+    infoDetails,
+    successHeader,
+    successInfo,
+    successList,
+    video,
+    images,
+  } = appealData.find((appeal) => appeal.appealId === appealId);
+  // console.log(appeal);
   return (
     <>
       <Navbar />
       <section>
         <div className="appeal-details-header">
-          <img src={headerImage} alt="" />
-          <h1>Water For Life</h1>
+          <img src={appealHeaderImageUrl} alt="" />
+          <h1>{appealHeaderTitle}</h1>
         </div>
         <DonateForm isBackgroundColor={false} />
         <div className="appeal-details-body">
-          <h1>Give Water, Saves life</h1>
+          <h1>{header}</h1>
           {/* <img className="zk-policy" src={zkPolicy} alt=""/> */}
           <p>
             Globally, <span>785 MILLION</span> people lack access to clean
@@ -64,14 +82,7 @@ const AppealDetails = () => {
             from contaminated sources.
             <br />
             <br />
-            Drinking dirty water can cause diseases such as cholera, typhoid and
-            diarrhoea, which kills millions of people every year. In many parts
-            of the world, women and children walk for hours across dangerous
-            terrain in search of water. The water they are able to find is often
-            dirty, carrying disease. Nobody should have to live like this. Help
-            us make fresh, clean water accessible to everyone; build a well with
-            your donation today to save countless lives through our Water For
-            Life appeal.
+            {infoDetails}
           </p>
         </div>
         <div className="appeal-details-our-success">
@@ -101,7 +112,7 @@ const AppealDetails = () => {
 
         <div className="appeal-gallery">
           <iframe
-          className="appeal-video"
+            className="appeal-video"
             src="https://www.youtube.com/embed/yPxMOzN0Uq4"
             title="YouTube video player"
             frameborder="0"

@@ -1,0 +1,105 @@
+.donate-section {
+  .donate-header {
+    position: relative;
+    margin-top: -25px;
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .donate-header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+    .header-overlay-text {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      color: #fff;
+      height: 100%;
+      padding: 0 10%;
+      // border: 1px solid#F57920;
+
+      h1 {
+        font-size: 50px;
+        margin: 0;
+      }
+    }
+  }
+
+  .donate-body {
+    display: grid;
+    padding: 0 10%;
+    min-height: 600px;
+    grid-template-columns: 2fr 1fr;
+    .donate-body-info {
+      padding-right: 40px;
+      // order: 2;
+      .we-helped-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        .we-helped-card {
+          background-color: #00ad511a;
+          padding: 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          transition: 0.3s ease all;
+          &:hover {
+            background-color: #00ad50;
+            color: #fff;
+            .we-helped-card-icon {
+              color: #fff;
+            }
+          }
+          .we-helped-card-icon {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            color: #00ad50;
+          }
+          h4 {
+            margin: 0;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+
+    .donate-form-info {
+      // order: 1;
+    }
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .donate-section {
+    .donate-header {
+      .header-overlay-text {
+        h1 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  .donate-body {
+    grid-template-columns: 1fr !important;
+
+    .donate-body-info {
+      order: 2;
+      text-align: center;
+      padding: 0 !important;
+      .we-helped-cards {
+        grid-template-columns: 1fr !important;
+      }
+    }
+    .donate-form-info {
+      order: 1;
+    }
+  }
+}

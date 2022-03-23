@@ -8,15 +8,16 @@
   z-index: -1;
   margin-bottom: 20px;
 
-  .slick-slide img{
+  .slick-slide img {
     height: 100%;
-}
-  .slick-next:before, .slick-prev:before {
+  }
+  .slick-next:before,
+  .slick-prev:before {
     display: none;
   }
 
-  h2{
-    color: #00AD50;
+  h2 {
+    color: #00ad50;
   }
   p {
     margin: 5px 0 50px;
@@ -35,15 +36,10 @@
   }
 }
 
-
-@media screen and (max-width: 767px){
-  
-  .p-slider.our-partner{
-
-    .p-slider-item img{
+@media screen and (max-width: 767px) {
+  .p-slider.our-partner {
+    .p-slider-item img {
       height: auto;
-  
     }
   }
-   
 }

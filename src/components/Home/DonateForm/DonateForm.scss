@@ -1,108 +1,104 @@
-.donate-form{
+.donate-form {
+  width: 100%;
+  display: grid;
+  // align-items: center;
+  // grid-template-columns: 1.3fr 4fr;
+  margin-top: -5px;
+  justify-content: space-between;
+  // background-color: #00ad51a2;
+  // border: 1px solid #00ad51a2;
+
+  .donate-form-text {
     width: 100%;
-    display: grid;
+    // height: 60px;
+    color: white;
+    text-transform: uppercase;
+    // background-color: #00AD50;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1.3fr 4fr;
-    margin-top: -5px;
-    justify-content: space-between;
-    // background-color: #00ad51a2;
-    // border: 1px solid #00ad51a2;
+    justify-content: center;
+  }
+  .donate-form-body {
+    display: grid;
+    grid-gap: 15px;
+    // grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    padding: 5px 5px;
 
-
-    .donate-form-text{
-        width: 100%;
-        // height: 60px;
-        color: white;
-        text-transform: uppercase;
-        // background-color: #00AD50;
-        font-weight: 600;
-        font-size: 20px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-       
+    .donate-form-img {
+      position: relative;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
-    .donate-form-body{
-        display: grid;
-        grid-gap: 15px;
-        grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
-        padding: 5px 5px;
-        
-        .donate-form-img{
-            position: relative;
-            img{
-                width: 100px;
-                height: 100px;
-                object-fit: cover;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
-            }
-        }
-    }    
+  }
 }
 
 input,
 select option,
 select {
   width: 100%;
-  padding: .4em;
+  padding: 0.4em;
   line-height: 1.4;
   background-color: #f9f9f9;
-  border: 1px solid #00AD50;
+  border: 1px solid #00ad50;
   border-radius: 3px;
   transition: all 0.35s ease-in-out;
   font-size: 17px;
-  
+  align-self: center;
 }
 input:focus {
-    outline: 0;
-    border-color: #00AD50 ;
-  }
+  outline: 0;
+  border-color: #00ad50;
+}
 select:focus,
 select:active {
-    border-color: #00AD50 ;
-outline: 0;
+  border-color: #00ad50;
+  outline: 0;
 }
-input[type="button"]{
-    background-color: #F57920;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    cursor: pointer;
-    border: none;
-    transition: 0.3s all ease;
-    &:hover{
-        border: 1px solid #ffffff;
-        letter-spacing: 3px;
-    }
+input[type="button"] {
+  background-color: #f57920;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all ease;
+  &:hover {
+    border: 1px solid #ffffff;
+    letter-spacing: 3px;
+  }
 }
-@media screen and (max-width: 767px){
-    .donate-form{
-        grid-template-columns: 1fr;
-        padding-bottom: 70px;
+@media screen and (max-width: 767px) {
+  .donate-form {
+    grid-template-columns: 1fr !important;
+    padding-bottom: 70px;
 
-        .donate-form-body{
-            grid-template-columns: 1fr;
+    .donate-form-body {
+      grid-template-columns: 1fr !important;
 
-            .donate-form-img{
-                img{
-                    // left: 50%;
-                    // top: 50%;
-                    width: 80px;
-                    height: 80px;
-                    transform: translate(-50%,-10%);
-                    
-                }
-            }
+      .donate-form-img {
+        img {
+          // left: 50%;
+          // top: 50%;
+          width: 80px;
+          height: 80px;
+          transform: translate(-50%, -10%);
         }
+      }
     }
-    input,
-    select option,
-    select {
-        padding: .3em;
-    }
-    
+  }
+  input,
+  select option,
+  select {
+    padding: 0.3em;
+  }
 }

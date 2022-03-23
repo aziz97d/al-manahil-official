@@ -13,6 +13,7 @@ import {
   FaShoppingBasket,
   FaRegUserCircle,
   FaArrowLeft,
+  FaSearch
 } from "react-icons/fa";
 import "./Navbar.scss";
 import "./ResponsiveNavbar.scss";
@@ -103,33 +104,39 @@ function Navbar() {
               <option value="bn">বাংলা</option>
               <option value="ar">عربي</option>
             </select>
+
           </div>
           <ul className="nav-social-icons">
+            
             <a
               className="social-icon"
               target="_blank"
-              href="https://www.facebook.com/amwfborg" rel="noreferrer"
+              href="https://www.facebook.com/amwfborg"
+              rel="noreferrer"
             >
               <AiFillFacebook />
             </a>
             <a
               className="social-icon"
               target="_blank"
-              href="https://twitter.com/amwfborg" rel="noreferrer"
+              href="https://twitter.com/amwfborg"
+              rel="noreferrer"
             >
               <AiFillTwitterSquare />
             </a>
             <a
               className="social-icon"
               target="_blank"
-              href="https://www.instagram.com/amwfb" rel="noreferrer"
+              href="https://www.instagram.com/amwfb"
+              rel="noreferrer"
             >
               <AiFillInstagram />
             </a>
             <a
               className="social-icon"
               target="_blank"
-              href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg" rel="noreferrer"
+              href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg"
+              rel="noreferrer"
             >
               <AiFillYoutube />
             </a>
@@ -151,31 +158,41 @@ function Navbar() {
 
           <ul id="nav-ul" className="nav-ul">
             <li>
-              <Link to="/home" className="nav-item">
-                {t("menu.home")}
+              <Link to="/zakat" className="nav-item">
+                {t("menu.zakat")}
               </Link>
             </li>
             <li>
-              <Link className="nav-item">{t("menu.aboutUs")}</Link>
+              <Link className="nav-item">{t("menu.events")}</Link>
             </li>
             <li>
               <Link to="/projects" className="nav-item">
                 {t("menu.ourProjects")}
               </Link>
             </li>
+            
+            <li>
+              <Link className="nav-item">{t("menu.latest")}</Link>
+            </li>
             <li>
               <Link className="nav-item">{t("menu.contactUs")}</Link>
             </li>
             <li>
-              <Link className="nav-item brand-orange-button">
+              <Link to="/donate" className="nav-item nav-donate-button">
                 {t("buttons.donate")}
               </Link>
             </li>
-            <div className="nav-feature">
-              <Link className="nav-icon-button">
-                <FaRegUserCircle />
+            <li>
+              <Link to="/donate" className="nav-item nav-signin-button">
+              {t("buttons.signIn")}
               </Link>
-              <Link className="nav-icon-button">
+            </li>
+
+            <div className="nav-feature">
+              <Link className="nav-item nav-icon-button">
+                <FaSearch />
+              </Link>
+              <Link className="nav-item  nav-icon-button">
                 <FaShoppingBasket />
               </Link>
             </div>
@@ -209,6 +226,9 @@ function Navbar() {
           </li>
           <li>
             <Link className="nav-item">{t("menu.contactUs")}</Link>
+          </li>
+          <li>
+            <Link className=""> <input style={{paddingLeft:'20px'}} placeholder="Search"/> </Link>
           </li>
           <li>
             <Link className="nav-item brand-orange-button">

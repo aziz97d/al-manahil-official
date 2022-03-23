@@ -21,12 +21,16 @@ i18n
         translation: {
           menu:{
             home: "Home",
+            zakat: "Zakat",
+            events : "Success Story",
             aboutUs:"About Us",
             ourProjects:"Our Projects",
+            latest:"Latest",
             contactUs:"Contact Us"
           },
           buttons:{
-            donate:"Donate"
+            donate:"Donate",
+            signIn:"Sign In"
           }
         }
       },
@@ -34,12 +38,16 @@ i18n
           translation:{
             menu:{
               home: "হোম",
+              zakat: "জাকাত",
+            events : "সফল গল্পগুলো",
               aboutUs:"আমাদের সম্পর্কে",
               ourProjects:"প্রকল্প সমূহ",
+              latest:"সর্বশেষ",
               contactUs:"যোগাযোগ করুন"
             },
             buttons:{
-              donate:"দান করুন" 
+              donate:"দান করুন" ,
+              signIn:"প্রবেশ করুন"
             }
           } 
         }
@@ -48,12 +56,16 @@ i18n
         translation:{
           menu:{
             home: "هوم",
+            zakat: "الزكة",
+            events : "قصص نجاح",
             aboutUs:"عن المناهل ",
             ourProjects:"المشاريع",
+            latest:"الأخيرة",
             contactUs:"اتصل بنا"
           },
           buttons:{
-            donate:"تبرع الآن"
+            donate:"تبرع الآن",
+            signIn:"تسجيل الدخول"
           }
         }
       }

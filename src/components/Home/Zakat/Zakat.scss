@@ -1,0 +1,102 @@
+.zakat-section {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 5%;
+    .zakat-section-header {
+      text-align: center;
+      font-size: 25px;
+      color: grey;
+      padding: 30px 0;
+      h1 {
+        margin: 0;
+        span {
+          color: #00ad50;
+  
+          &:last-child {
+            color: #f57920;
+          }
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .zakat-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      grid-gap: 35px;
+      font-family: 'poppins';
+  
+      .zakat-card {
+        width: 260px;
+        height: 330px;
+        padding: 10px 10px 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 2px solid rgba(99, 99, 99, 0.144);
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s all ease;
+        cursor: pointer;
+
+        p{
+            font-size: 15px;
+        }
+     
+
+        .card-image-div{
+            overflow: hidden;}
+
+        &:nth-child(even) .appeal-sub {
+          border-bottom: 3px solid #00ad50;
+        }
+        &:nth-child(odd) .appeal-sub {
+          border-bottom: 3px solid #f57920;
+        }
+        &:hover {
+        //   transform: translateY(-8px);
+          .appeal-sub {
+            .card-image-div{
+                
+                img {
+                    transform:  scale(1.1);
+                    
+                  }
+            }
+            
+          }
+        }
+        .appeal-sub {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          text-align: center;
+          // border-bottom: 4px solid #0F95A9;
+  
+          img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .appeal-section {
+      width: 100%;
+      padding: 15px 5%;
+      grid-gap: 10px;
+      .appeal-section-header {
+        font-size: 18px;
+      }
+      .appeal {
+        width: 90%;
+      }
+    }
+  }
+  

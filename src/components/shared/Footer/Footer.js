@@ -59,8 +59,20 @@ const Footer = () => {
             <h3>Gallery</h3>
 
             <div className="gallery-images">
+              <Link> 
               <img
-                src="https://scontent.fcgp5-1.fna.fbcdn.net/v/t1.6435-9/192744498_3207143412859748_121920808992827794_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=_2Kv9wgVLoAAX8KnF6O&_nc_ht=scontent.fcgp5-1.fna&oh=fc66d7c06be21892c5063d0bae83c48d&oe=612CA76E"
+                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
+                alt=""
+                className="gallery-image"
+              />
+              </Link>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0253/3661/0863/articles/JS_20170301_033622_2__preview_1_1024x1024.jpg?v=1595870921"
+                alt=""
+                className="gallery-image"
+              />
+              <img
+                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
                 alt=""
                 className="gallery-image"
               />
@@ -70,22 +82,12 @@ const Footer = () => {
                 className="gallery-image"
               />
               <img
-                src="https://scontent.fcgp5-1.fna.fbcdn.net/v/t1.18169-9/22045609_2052333305007437_2608515536111153441_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=6uU4BOYRWVUAX_pPhEu&tn=Q2ktCIJ43BwHIA4K&_nc_ht=scontent.fcgp5-1.fna&oh=817177599560737f93f391eabb4b33b3&oe=612C3691"
+                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
                 alt=""
                 className="gallery-image"
               />
               <img
-                src="https://scontent.fcgp5-1.fna.fbcdn.net/v/t1.6435-9/203012306_3223464454560977_8990217037200405006_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=j0qv0R3j3xgAX-V_75X&tn=Q2ktCIJ43BwHIA4K&_nc_ht=scontent.fcgp5-1.fna&oh=6214d91bac4b0d3ba32d12a40b41d92a&oe=612C2A6C"
-                alt=""
-                className="gallery-image"
-              />
-              <img
-                src="https://scontent.fcgp5-1.fna.fbcdn.net/v/t1.6435-9/201866157_3219057918334964_6613585321724332868_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=5gleHpS4-RQAX-8AVkg&tn=Q2ktCIJ43BwHIA4K&_nc_ht=scontent.fcgp5-1.fna&oh=1fd66238a059870d936694d8e73a7418&oe=612D47BE"
-                alt=""
-                className="gallery-image"
-              />
-              <img
-                src="https://scontent.fcgp5-1.fna.fbcdn.net/v/t1.6435-9/197083249_3214477418793014_3750549054913191181_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=xcE516-gc-oAX8CRpAa&_nc_ht=scontent.fcgp5-1.fna&oh=f11efd92371574ad8c5c9dd162d904ef&oe=612B7E75"
+                src="https://cdn.shopify.com/s/files/1/0253/3661/0863/articles/JS_20170301_033622_2__preview_1_1024x1024.jpg?v=1595870921"
                 alt=""
                 className="gallery-image"
               />

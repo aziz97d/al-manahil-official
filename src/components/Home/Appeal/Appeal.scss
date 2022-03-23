@@ -1,8 +1,7 @@
 .appeal-section {
   width: 100%;
   background-color: #e1ecf9;
-  padding: 15px 10%;
-
+  padding: 15px 5%;
   .appeal-section-header {
     text-align: center;
     font-size: 25px;
@@ -18,20 +17,20 @@
         }
       }
     }
-    p{
-        margin: 0;
+    p {
+      margin: 0;
     }
   }
   .appeals {
     display: grid;
     // grid-template-columns: repeat(4,1fr);
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-gap: 35px;
     justify-items: center;
 
     .appeal {
       width: 100%;
-      // height: 300px;
+      min-height: 350px;
       padding: 10px 10px 3px;
       background-color: #fff;
       border-radius: 5px;
@@ -40,6 +39,12 @@
       color: #000;
       transition: 0.3s all ease;
       cursor: pointer;
+      &:nth-child(even) .appeal-sub {
+        border-bottom: 3px solid #00ad50;
+      }
+      &:nth-child(odd) .appeal-sub {
+        border-bottom: 3px solid #f57920;
+      }
       &:hover {
         transform: translateY(-8px);
         .appeal-sub {
@@ -54,9 +59,10 @@
         overflow: hidden;
         text-align: center;
         // border-bottom: 4px solid #0F95A9;
+
         img {
           width: 100%;
-          height: 140px;
+          height: 180px;
           object-fit: cover;
           object-position: center;
           transition: 0.2s;
@@ -64,7 +70,7 @@
 
         p {
           display: -webkit-box;
-          -webkit-line-clamp: 4;
+          -webkit-line-clamp: 6;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
@@ -79,7 +85,7 @@
     padding: 15px 5%;
     grid-gap: 10px;
     .appeal-section-header {
-        font-size: 18px;
+      font-size: 18px;
     }
     .appeal {
       width: 90%;

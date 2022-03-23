@@ -46,12 +46,36 @@
     background-color: #00AD50;
     margin: 0;
     .nav-item {
-      padding: 0 10px;
+      padding:  20px;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 600;
       color: #fff;
+      text-transform: uppercase;
+
+      font-family: 'Almarai', sans-serif;
+      transition: .5s ease;
 
       &:hover {
+        background-color: rgba(0, 0, 0, 0.397);
+      }
+    }
+    .nav-donate-button{
+      background-color: #f57920;
+      padding: 10px 15px;
+      box-shadow: gray 3px 3px;
+      margin: 0 5px;
+      border-radius: 3px;
+    }
+    .nav-signin-button{
+      background-color: #57483f94;
+      padding: 10px 15px;
+      box-shadow: rgba(128, 128, 128, 0.527) 3px 3px;
+      margin: 0 5px;
+      border-radius: 3px;
+
+      &:hover{
+        background-color: #f57920;
       }
     }
     .nav-feature{
@@ -94,6 +118,10 @@
     color: #00AD50;
     font-size: 17px;
 
+  }
+  .lan-btn{
+    margin: 0 5px;
+    font-family: 'Almarai', sans-serif;
   }
 
     .nav-social-icons{

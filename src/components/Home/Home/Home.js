@@ -7,7 +7,7 @@ import MainAppeal from "../MainAppeal/MainAppeal.js";
 import OurPartner from "../OurPartner/OurPartner.js";
 import OurProgress from "../OurProgress/OurProgress";
 import SuccessStory from "../SuccessStory/SuccessStory.js";
-
+import Zakat from "../Zakat/Zakat";
 
 const Home = () => {
   return (
@@ -18,11 +18,13 @@ const Home = () => {
       {/* <ConnectUs></ConnectUs> */}
       {/* <LatestCauses></LatestCauses> */}
       {/* <WhoWeAre></WhoWeAre> */}
-      <OurProgress></OurProgress>
+     
+      <OurProgress isBackground={true}></OurProgress>
       <SuccessStory></SuccessStory>
+      <Zakat></Zakat>
       <OurPartner></OurPartner>
       <Footer></Footer>
-      <FixedForm/>
+      <FixedForm />
     </div>
   );
 };

@@ -19,12 +19,14 @@ function OurProgress({ isBackground }) {
         style={{ backgroundColor: isBackground ? "" : "#fff" }}
         className="our-progress"
       >
-        <h2>Our Progress</h2>
+        <div className="section-header">
+        <h1><span>Our Progress</span> <span></span> </h1>
         <p>
           We are dedicated to improving lives and building a future for poor
           children around the world. Here’s the progress we’ve made since we
           started working in 1999.
         </p>
+        </div>
 
         <>
           <ProgressList />

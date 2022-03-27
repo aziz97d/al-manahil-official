@@ -28,8 +28,7 @@ function Zakat() {
     ]
   return (
     <section className="zakat-section">
-      <div className="zakat-section-header">
-        
+      <div className="section-header">
         <h1>
           <span>Your Zakat </span> 
         </h1>

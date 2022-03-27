@@ -44,11 +44,14 @@ function OurPartner() {
   };
   return (
     <div className="our-partner p-slider">
-      <h2> Trusted Partners Worldwide </h2>
-      <p>
-        We are very greatful and feel honoured to our all partners for being
-        with us
-      </p>
+      <div className="section-header">
+        <h1>
+          <span>Trusted Partners Worldwide </span> <span></span>
+        </h1>
+        <p>We are very greatful and feel honoured to our all partners for being
+        with us</p>
+      </div>
+      
       <Slider {...settings}>
         {partnerData.map((data) => (
           <OurPartnerItem data={data}></OurPartnerItem>

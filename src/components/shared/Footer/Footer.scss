@@ -127,6 +127,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 10%;
+  margin-bottom: 50px;
   min-height: 80px;
   align-items: center;
   border-top: 1px solid #00AD50;
@@ -153,6 +154,9 @@ footer {
 
 
 @media screen and (max-width: 767px){
+  .footer-top {
+    
+    display: block;}
   .footer-bottom {
     flex-direction: column-reverse;
     margin: 0 5%;

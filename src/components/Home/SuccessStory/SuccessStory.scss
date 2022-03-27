@@ -1,70 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Lobster&display=swap');
 .success-story {
   width: 100%;
   padding: 0 10%;
   display: grid;
   grid-template-columns: 2fr 3fr;
+  // background-image: url("https://demo.artureanec.com/html/helpo/img/events_bg.png");
+  // background-position: left;
+  // background-repeat: no-repeat;
+  // object-fit: cover;
+  
+  .image-bg-success{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .success-story-left{
+    border: 1px solid #f57920;
+    display: flex;
+    background-color: #00ad50;
+    flex-direction: column;
+    align-items: center;
+    // padding: 15px;
+    color: #fff;
 
-  .media-coverage {
-    h3 {
-      margin: 0;
-      color: #00ad50;
+    .success-story-left-img{
+      // height: 100%;
+      width: 100%;
+      border: 1px solid #00ad50;
+      object-fit: cover;
     }
-    .media-card-list {
-      text-align: left;
-      .media-card {
-        margin-top: 30px;
-        margin-right: 50px;
-        border-radius: 5px;
-        box-shadow: 0 3px 7px -1px rgba(#000, 0.2);
-        padding: 10px;
-        .media-card-body {
-          display: flex;
-          align-items: center;
-          .media-card-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 2px solid #00ad50;
-            object-fit: contain !important;
-          }
-          .media-card-details {
-            padding: 0 15px;
-            h4 {
-              margin: 5px 0;
-            }
-            p {
-              display: -webkit-box;
-              -webkit-line-clamp: 4;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-            }
-          }
-        }
-        .media-card-footer {
-          display: flex;
-          justify-content: space-between;
-          .media-card-read-more,
-          .media-card-download {
-            text-decoration: none;
-            padding: 5px 15px;
-          }
-          .media-card-read-more {
-            background-color: #00ad50;
-            color: #fff;
-            border: 2px solid transparent;
-            &:hover {
-              color: #00ad50;
-              border: 2px solid #00ad50;
-              background-color: #fff;
-            }
-          }
-          .media-card-download {
-            border: 2px solid #00ad50;
-          }
-        }
-      }
+
+    .hadith-part{
+      padding: 15px;
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Lobster', cursive;
     }
   }
+ 
+  
 
   .latest-success-story {
     .success-story-header {
@@ -101,18 +76,26 @@
 
       .story-card {
         display: flex;
-        padding: 10px;
-
+        padding: 5px;
+        background-color: #fff;
         min-height: 150px;
         margin-top: 15px;
-        margin-bottom: 1.6%;
+        // margin-bottom: 1.6%;
         box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
         border-radius: 5px;
-        border-right: 2px solid #00ad50;
         transition: 0.3s;
         &:hover {
           box-shadow: 0 0px 7px 0 rgba(#000, 0.4);
         }
+        &:nth-child(even) {
+        
+          border-right: 2px solid #00ad50;
+        }
+        &:nth-child(odd) {
+          
+          border-right: 2px solid #f57920;
+        }
+
         .story-card-img {
           width: 30%;
           height: 100%;
@@ -121,6 +104,7 @@
             width: 100%;
             height: 150px;
             object-fit: cover;
+            
           }
         }
         .story-card-details {
@@ -131,6 +115,7 @@
             margin: 0;
             &:nth-child(2) {
               margin: 12px 0 5px;
+              
               display: -webkit-box;
               -webkit-line-clamp: 3;
               -webkit-box-orient: vertical;
@@ -141,14 +126,15 @@
           .story-card-footer {
             display: flex;
             justify-content: space-between;
-            font-weight: 600;
+            // font-weight: 600;
             padding: 10px;
             transition: all 0.9s ease-in-out;
 
             .story-card-date {
-              color: rgb(73, 73, 73);
+              color: rgb(109, 109, 109);
               display: flex;
               align-items: center;
+              font-size: 15px;
               .date-icon {
                 margin-right: 5px;
               }
@@ -181,27 +167,20 @@
 }
 
 @media screen and (max-width: 767px) {
+  
   .success-story {
     width: 100%;
     padding: 10px 5%;
     grid-template-columns: 1fr;
     font-size: 17px;
 
-    .media-coverage {
-      .media-card-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // width: 80%;
-        .media-card {
-          margin-right: 0;
-          width: 90%;
+    .success-story-left{
+      display: none;
+    }
 
-          .media-card-body {
-            flex-direction: column;
-          }
-        }
-      }
+    .image-bg-success{
+      width: 100%;
+      
     }
 
     .latest-success-story {
@@ -223,8 +202,17 @@
         .story-card {
           flex-direction: column;
           text-align: center;
+          border-right: none !important;
+          &:nth-child(even) {
+        
+            border-bottom: 3px solid #00ad50;
+          }
+          &:nth-child(odd) {
+            
+            border-bottom: 3px solid #f57920;
+          }
+          
           border-bottom: 3px solid #00ad50;
-          border-right: none;
           .story-card-img {
             width: 100%;
             height: 100%;

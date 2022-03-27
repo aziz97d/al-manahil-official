@@ -1,0 +1,105 @@
+
+
+
+.media-coverage-section {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 5%;
+
+
+  .news-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 35px;
+    font-family: "poppins";
+
+    .news-card {
+      width: 300px;
+      height: 400px;
+      padding: 10px 10px 3px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 2px solid rgba(99, 99, 99, 0.144);
+      text-decoration: none;
+      color: #000;
+      transition: 0.3s all ease;
+      cursor: pointer;
+      &:nth-child(odd) .news-category {
+        background-color: #00ad50;
+      }
+      &:nth-child(even) .news-category {
+        background-color: #f57920;
+      }
+
+      .news-category {
+        color: #fff;
+        padding: 4px 5px;
+        position: absolute;
+        transform: translateY(-25px);
+        border-radius: 3px;
+      }
+      h4 {
+        margin: 20px 0 10px;
+      }
+      p {
+        font-size: 15px;
+        color: rgb(116, 116, 116);
+        margin: 5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .card-image-div {
+        overflow: hidden;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 10px rgb(184, 184, 184);
+        .news-card-body {
+          .card-image-div {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      .news-card-body {
+        width: 100%;
+        overflow: hidden;
+        text-align: left;
+        // border-bottom: 4px solid #0F95A9;
+
+        img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          object-position: center;
+          transition: 0.2s;
+        }
+      }
+      .news-card-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+//   @media screen and (max-width: 767px) {
+//     .appeal-section {
+//       width: 100%;
+//       padding: 15px 5%;
+//       grid-gap: 10px;
+//       .appeal-section-header {
+//         font-size: 18px;
+//       }
+
+//     }
+//   }

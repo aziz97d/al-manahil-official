@@ -3,10 +3,12 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 2% 5%;
   background-color: #e1ecf9;
+  
+  // background-image: url("https://wallpaperaccess.com/full/1411315.jpg");
 
   .main-appeal-card {
     min-height: 35px;
-    color: #fff;
+    color: #fff; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +33,7 @@
     .main-appeal-card-icon {
       font-size: 50px;
     }
+
     h2,
     p {
       text-align: center;

@@ -1,0 +1,31 @@
+.home-bg-div{
+    
+  background-image: url("https://wallpaperaccess.com/full/1411315.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Common Header Class
+.section-header {
+  text-align: center;
+  font-size: 20px !important;
+  color: grey;
+  padding: 30px 0;
+  h1 {
+    margin: 0;
+    span {
+      color: #00ad50;
+      &:last-child {
+        color: #f57920;
+      }
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-header {
+    font-size: 15px !important;}
+}

@@ -4,15 +4,18 @@ import Appeal from "../Appeal/Appeal.js";
 import FixedForm from "../FixedForm/FixedForm.js";
 import Header from "../Header/Header.js";
 import MainAppeal from "../MainAppeal/MainAppeal.js";
+import MediaCoverage from "../MediaCoverage/MediaCoverage";
 import OurPartner from "../OurPartner/OurPartner.js";
 import OurProgress from "../OurProgress/OurProgress";
 import SuccessStory from "../SuccessStory/SuccessStory.js";
 import Zakat from "../Zakat/Zakat";
+import "./Home.scss"
 
 const Home = () => {
   return (
     <div>
       <Header></Header>
+      {/* <div className="home-bg-div"> */}
       <MainAppeal />
       <Appeal></Appeal>
       {/* <ConnectUs></ConnectUs> */}
@@ -20,8 +23,10 @@ const Home = () => {
       {/* <WhoWeAre></WhoWeAre> */}
      
       <OurProgress isBackground={true}></OurProgress>
+      {/* </div> */}
       <SuccessStory></SuccessStory>
-      <Zakat></Zakat>
+      <MediaCoverage></MediaCoverage>
+      {/* <Zakat></Zakat> */}
       <OurPartner></OurPartner>
       <Footer></Footer>
       <FixedForm />

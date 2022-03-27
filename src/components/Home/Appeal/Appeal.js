@@ -13,6 +13,7 @@ import data from "../../../data/AppealData.js";
 function Appeal() {
   return (
     <section className="appeal-section">
+      
       <div className="appeal-section-header">
         <h1>
           “<span>Charity </span> extinguishes the sins like water <br />{" "}

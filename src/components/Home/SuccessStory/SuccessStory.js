@@ -47,17 +47,19 @@ function SuccessStory() {
         <div className="story-list">
           <div className="story-card">
             <div className="story-card-img ">
-              <img src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+              <img src="https://i.ibb.co/6Y8XTQW/Lag-pataient-01.png" />
             </div>
             <div className="story-card-details">
               <p className="story-card-title">
                 <strong>
-                  Gambia Statement - children safe and case has been suspended
+                Saving Mr. Minhaj’s leg
                 </strong>
               </p>
               <p className="story-card-news">
-                Gambia Statement - children safe and case has been suspended
-                Gambia Statement - children safe and case has been suspended
+              Mr. Minhaj used to run his family by selling fruits in different passenger cars. But an accident stopped his life. He lost his right leg in an accident while selling fruits in a jeep.
+The daily income of Mr. Minhaj was enough to feed the whole family including seven children. But the family fell into financial straits after the lone master was killed in the accident.
+It is almost impossible to afford your own medicine at this time of misery. The board of Al-Manahil, seeing Mr. Minhaj's condition, decided to place a prosthetic leg and complete all his medical work.
+Al-Manahil has thus sided with countless helpless people. Hundreds of thousands of the poor have been in danger.
               </p>
               <div className="story-card-footer">
                 <p className="story-card-date">
@@ -72,17 +74,19 @@ function SuccessStory() {
           </div>
           <div className="story-card">
             <div className="story-card-img ">
-              <img src="https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg" />
+              <img src="https://i.ibb.co/SdQp9C4/Water-Well.jpg" />
             </div>
             <div className="story-card-details">
               <p className="story-card-title">
                 <strong>
-                  Gambia Statement - children safe and case has been suspended
+                Tubewell for five families of disabled  in a water crisis.
                 </strong>
               </p>
               <p className="story-card-news">
-                Gambia Statement - children safe and case has been suspended
-                Gambia Statement - children safe and case has been suspended
+              Tubewell for five families of disabled in water crisis.
+About five helpless families, including physically challenged beggars, were in indescribable distress for water. Being a poor beggar class, it was not possible for them to provide proper water. No one but the sufferer will understand how difficult life becomes when one of the water of life is scarce.
+Al Manahil has arranged a soup tubewell for the helpless people. After a long time, the disabled beggar got a tubewell and started praying in the court of the great Lord. Helpless people pray from the bottom of their hearts whenever they use tubewells. And Allah Almighty will not return their prayers, InshaAllah.
+Al-Manahil receives news from countless families and communities who are constantly struggling for something as valuable as water. Water is needed in every moment of life. How difficult and indescribable is the condition of those who are in dire straits. If we can extend a hand of cooperation to those who can afford it, then it is possible to put a smile on the face of such helpless people. God will be pleased with you inshaAllah.
               </p>
               <div className="story-card-footer">
                 <p className="story-card-date">

@@ -13,7 +13,12 @@ import {
   FaShoppingBasket,
   FaRegUserCircle,
   FaArrowLeft,
-  FaSearch
+  FaSearch,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedinIn
+
 } from "react-icons/fa";
 import "./Navbar.scss";
 import "./ResponsiveNavbar.scss";
@@ -95,52 +100,57 @@ function Navbar() {
               <span>
                 <FaPhone />
               </span>{" "}
-              03000 11 11 11
+              018 8657 6775
             </p>
-          </div>
-          <div>
-            <select onChange={handleChange}>
-              <option value="en">ENG</option>
-              <option value="bn">বাংলা</option>
-              <option value="ar">عربي</option>
-            </select>
-
           </div>
           <ul className="nav-social-icons">
             
             <a
-              className="social-icon"
+              className="social-link"
               target="_blank"
               href="https://www.facebook.com/amwfborg"
               rel="noreferrer"
             >
-              <AiFillFacebook />
+              <FaFacebookF className="social-icon"  />
             </a>
             <a
-              className="social-icon"
+              className="social-link"
               target="_blank"
               href="https://twitter.com/amwfborg"
               rel="noreferrer"
             >
-              <AiFillTwitterSquare />
+              <FaTwitter className="social-icon"  />
             </a>
+           
             <a
-              className="social-icon"
-              target="_blank"
-              href="https://www.instagram.com/amwfb"
-              rel="noreferrer"
-            >
-              <AiFillInstagram />
-            </a>
-            <a
-              className="social-icon"
+              className="social-link"
               target="_blank"
               href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg"
               rel="noreferrer"
             >
-              <AiFillYoutube />
+              <FaYoutube className="social-icon"  />
+            </a>
+            <a
+              className="social-link"
+              target="_blank"
+              href="https://www.instagram.com/amwfb"
+              rel="noreferrer"
+            >
+              <FaLinkedinIn className="social-icon" />
             </a>
           </ul>
+          <div className="web-lng">
+            {/* <select onChange={handleChange}>
+              <option value="en">ENG</option>
+              <option value="bn">বাংলা</option>
+              <option value="ar">عربي</option>
+            </select> */}
+            <button className="lng-btn active">ENG</button>
+            <button className="lng-btn">BN</button>
+            <button className="lng-btn">AR</button>
+
+          </div>
+          
         </div>
 
         <div className={navbarClasses.join(" ")}>

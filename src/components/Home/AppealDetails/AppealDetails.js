@@ -113,61 +113,26 @@ const AppealDetails = () => {
         <div className="appeal-gallery">
           <iframe
             className="appeal-video"
-            src="https://www.youtube.com/embed/yPxMOzN0Uq4"
+            src={video}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
           <div className="appeal-gallery-images">
-            <div className="image">
+            {
+              images.map((img)=>(
+              <div className="image">
               <img
                 alt=""
-                src="https://o.aolcdn.com/hss/storage/midas/f93cbb3ab53cf5a87b60ff63d317b9a6/203490061/CF024162.jpg"
+                src={img.imageUrl}
               />
             </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
-              />
-            </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://o.aolcdn.com/hss/storage/midas/f93cbb3ab53cf5a87b60ff63d317b9a6/203490061/CF024162.jpg"
-              />
-            </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
-              />
-            </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://o.aolcdn.com/hss/storage/midas/f93cbb3ab53cf5a87b60ff63d317b9a6/203490061/CF024162.jpg"
-              />
-            </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
-              />
-            </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
-              />
-            </div>
-            <div className="image">
-              <img
-                alt=""
-                src="https://muslimcharity.org.uk/wp-content/uploads/2017/04/IMG_7731_001.jpg"
-              />
-            </div>
+              ))
+            }
+            
+            
+            
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Lobster&display=swap');
 .success-story {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 5%;
   display: grid;
   grid-template-columns: 2fr 3fr;
   // background-image: url("https://demo.artureanec.com/html/helpo/img/events_bg.png");
@@ -9,12 +9,7 @@
   // background-repeat: no-repeat;
   // object-fit: cover;
   
-  .image-bg-success{
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    opacity: 0.5;
-  }
+
   .success-story-left{
     border: 1px solid #f57920;
     display: flex;
@@ -23,7 +18,6 @@
     align-items: center;
     // padding: 15px;
     color: #fff;
-
     .success-story-left-img{
       // height: 100%;
       width: 100%;
@@ -49,7 +43,7 @@
       background-color: #00ad50;
       height: 40px;
       padding: 0 20px;
-      margin: 0 20px;
+      margin: 0 10px;
       color: white;
 
       h3 {
@@ -57,17 +51,21 @@
       }
 
       .nav-social-icons {
-        display: flex;
-        list-style: none;
-
-        .social-icon {
-          margin: 0 10px;
-          cursor: pointer;
-          transition: 0.3s all ease;
-          &:hover {
-            transform: scale(1.1);
+        // display: flex;
+        // list-style: none;
+        .social-link{
+          background-color: #fff;
+          .social-icon {
+            // padding: 2px;
+            color: #00ad50;
+            // cursor: pointer;
+            // transition: 0.3s all ease;
+            // &:hover {
+            //   transform: scale(1.1);
+            // }
           }
         }
+        
       }
     }
 
@@ -229,3 +227,4 @@
     }
   }
 }
+

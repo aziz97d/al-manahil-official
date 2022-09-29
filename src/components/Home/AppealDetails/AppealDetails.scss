@@ -1,6 +1,6 @@
 .appeal-details-header {
   position: relative;
-  height: 400px;
+  height: 500px;
   width: 100%;
   margin-bottom: 30px;
   img {
@@ -11,17 +11,26 @@
     opacity: 0.9;
   }
   h1 {
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    height: 100%;
     position: absolute;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-size: 35px;
-    color: #fff;
-    background-color: #00ad51a2;
+    font-family: 'Paytone One', sans-serif;
+    color: #00ad50;    
     text-transform: uppercase;
     opacity: 1 !important;
-    margin: 0;
-    padding: 5px 0;
+    padding: 1rem 5rem;
+    span{
+      font-size: 17px;
+      font-family: "Ruluko", sans-serif;
+      padding: 1rem 0;
+      text-align: justify;
+    }
   }
 }
 .appeal-details-body {
@@ -86,6 +95,24 @@
 }
 
 @media screen and (max-width: 767px) {
+  .appeal-details-header{
+    height: 200px;
+
+    h1{
+      font-size: 16px !important;
+      padding: 0;
+      padding-top: 1.5rem;
+      span{
+        font-size: 11px !important;
+        
+      text-align: left;
+        // background-color: wheat;
+        text-shadow: 1px 1px 1px white;
+        padding: 5px;
+        // display: none;
+      }
+    }
+  }
   .appeal-gallery {
     .appeal-video {
       height: auto;

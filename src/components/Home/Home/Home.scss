@@ -1,21 +1,27 @@
 .home-bg-div{
     
-  background-image: url("https://wallpaperaccess.com/full/1411315.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #00ad50;
+  // height: 3000px;
+  // width: 1200px;
 }
 
 // Common Header Class
 .section-header {
   text-align: center;
   font-size: 20px !important;
-  // color: grey;
+  color: green;
   padding: 30px 0;
   h1 {
     margin: 0;
   }
   p {
     margin: 0;
+    color: grey;
+  }
+  &:nth-child(even){
+    color: #00ad50;
+  }
+  &:nth-child(odd){
     color: #00ad50;
   }
 }
@@ -23,4 +29,12 @@
 @media screen and (max-width: 767px) {
   .section-header {
     font-size: 15px !important;}
+}
+.image-bg-success{
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background-repeat: repeat-y;
+  max-width: 100%;
 }

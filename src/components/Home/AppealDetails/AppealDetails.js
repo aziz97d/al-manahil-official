@@ -50,12 +50,14 @@ const AppealDetails = () => {
   const {
     appealHeaderImageUrl,
     appealHeaderTitle,
+    appealHeaderSubtitle,
     header,
     subInfoFirst,
     subInfoSecond,
     infoDetails,
     successHeader,
     successInfo,
+    isSuccessList,
     successList,
     video,
     images,
@@ -67,7 +69,8 @@ const AppealDetails = () => {
       <section>
         <div className="appeal-details-header">
           <img src={appealHeaderImageUrl} alt="" />
-          <h1>{appealHeaderTitle}</h1>
+          <h1>{appealHeaderTitle} <br/>
+          <span>{appealHeaderSubtitle}</span></h1>
         </div>
         <DonateForm isBackgroundColor={false} />
         <div className="appeal-details-body">
@@ -85,12 +88,23 @@ const AppealDetails = () => {
             {infoDetails}
           </p>
         </div>
-        <div className="appeal-details-our-success">
+        {
+              isSuccessList && (
+                <div className="appeal-details-our-success">
           <div className="our-partner p-slider">
             <h2> Our Success </h2>
             <p>We are in whole bangladesh, where there is needy there is we</p>
+            
             <Slider {...settings}>
-              <div className="p-slider-item">
+              {
+                successList.map((data)=>(
+                  <div className="p-slider-item">
+                    <h2>{data.beneficiaryAmount}</h2>
+                    <p>{data.beneficiaryTitle}</p>
+                  </div>
+                ))
+              }
+              {/* <div className="p-slider-item">
                 <h2>12000</h2>
                 <p>Water Well Installed</p>
               </div>
@@ -105,10 +119,13 @@ const AppealDetails = () => {
               <div className="p-slider-item">
                 <h2>500</h2>
                 <p>School base water projects</p>
-              </div>
+              </div> */}
             </Slider>
           </div>
         </div>
+              )
+        }
+        
 
         <div className="appeal-gallery">
           <iframe

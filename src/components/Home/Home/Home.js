@@ -16,18 +16,20 @@ const Home = () => {
     <div>
       <Header></Header>
       {/* <div className="home-bg-div"> */}
-      <MainAppeal />
+      {/* <MainAppeal /> */}
+      <img  src="https://demo.artureanec.com/html/helpo/img/events_bg.png" className="image-bg-success" />
       <Appeal></Appeal>
       {/* <ConnectUs></ConnectUs> */}
       {/* <LatestCauses></LatestCauses> */}
       {/* <WhoWeAre></WhoWeAre> */}
      
-      <OurProgress isBackground={true}></OurProgress>
+      {/* <OurProgress isBackground={true}></OurProgress> */}
       {/* </div> */}
+      <img  src="https://demo.artureanec.com/html/helpo/img/events_bg.png" className="image-bg-success" />
       <SuccessStory></SuccessStory>
       <MediaCoverage></MediaCoverage>
       {/* <Zakat></Zakat> */}
-      <OurPartner></OurPartner>
+      {/* <OurPartner></OurPartner> */}
       <Footer></Footer>
       <FixedForm />
     </div>

@@ -7,13 +7,26 @@ import {
   AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
+import {
+  FaPhone,
+  FaBars,
+  FaShoppingBasket,
+  FaRegUserCircle,
+  FaArrowLeft,
+  FaSearch,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedinIn
+
+} from "react-icons/fa";
 import { FaClock, FaArrowRight } from "react-icons/fa";
 import "./SuccessStory.scss";
 
 function SuccessStory() {
   return (
     <section className="success-story">
-      <img  src="https://demo.artureanec.com/html/helpo/img/events_bg.png" className="image-bg-success" />
+      
     <div className="success-story-left" >
       <img className="success-story-left-img" src="https://themuslimkit.com/wp-content/uploads/2020/10/sadaqah-jariyah.jpg" />
       <div className="hadith-part">
@@ -29,18 +42,40 @@ function SuccessStory() {
         <div className="success-story-header">
           <h3>Latest Success Story</h3>
           <ul className="nav-social-icons">
-            <li className="social-icon">
-              <AiFillFacebook />
-            </li>
-            <li className="social-icon">
-              <AiFillYoutube />
-            </li>
-            <li className="social-icon">
-              <AiFillInstagram />
-            </li>
-            <li className="social-icon">
-              <AiFillTwitterSquare />
-            </li>
+            
+            <a
+              className="social-link"
+              target="_blank"
+              href="https://www.facebook.com/amwfborg"
+              rel="noreferrer"
+            >
+              <FaFacebookF className="social-icon"  />
+            </a>
+            <a
+              className="social-link"
+              target="_blank"
+              href="https://twitter.com/amwfborg"
+              rel="noreferrer"
+            >
+              <FaTwitter className="social-icon"  />
+            </a>
+           
+            <a
+              className="social-link"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg"
+              rel="noreferrer"
+            >
+              <FaYoutube className="social-icon"  />
+            </a>
+            <a
+              className="social-link"
+              target="_blank"
+              href="https://www.linkedin.com/company/amwfborg/"
+              rel="noreferrer"
+            >
+              <FaLinkedinIn className="social-icon" />
+            </a>
           </ul>
         </div>
 

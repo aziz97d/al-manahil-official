@@ -18,7 +18,10 @@ const FixedForm = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 750) {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight-300) {
+      setScrolled(false);
+    } 
+    else if (offset > 750) {
       setScrolled(true);
     } else {
       setScrolled(false);

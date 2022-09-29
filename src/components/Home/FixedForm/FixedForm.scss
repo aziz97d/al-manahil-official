@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  transition: 0.3s all ease;
+  transition: 0.3s all ease !important;
   display: none;
   .fixed-form-donate-button {
     justify-content: center;

@@ -1,4 +1,37 @@
 $border-color: #4040415d;
+::selection {
+  color: #ffffff;
+  background: #f57920;
+}
+
+.upcomming{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+     -225deg,
+     #00ad50 0%,
+     #44107a 29%,
+     #ff1361 67%,
+     #fff800 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   
+   color: #fff;
+   background-clip: text;
+   text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 4s linear infinite;
+   
+  text-align: center;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+ }
 
 .donate-section {
   background-color: #e1ecf9;
@@ -78,6 +111,7 @@ $border-color: #4040415d;
       border-bottom: 1px solid $border-color;
       
       .payment-logo{
+
         display: flex;
         align-items: center;
         justify-content: end;
@@ -184,34 +218,31 @@ $border-color: #4040415d;
 }
 
 @media screen and(max-width: 767px) {
-  .donate-section {
-    .donate-header {
-      .header-overlay-text {
-        h1 {
-          font-size: 28px;
-        }
-      }
-    }
-  }
-  .donate-body {
-    grid-template-columns: 1fr !important;
+  // .donate-section {
+  //   .donate-header {
+  //     .header-overlay-text {
+  //       h1 {
+  //         font-size: 28px;
+  //       }
+  //     }
+  //   }
+  // }
+  // .donate-body {
+  //   grid-template-columns: 1fr !important;
 
-    .donate-body-info {
-      order: 2;
-      text-align: center;
-      padding: 0 !important;
-      .we-helped-cards {
-        grid-template-columns: 1fr !important;
-      }
-    }
-    .donate-form-info {
-      order: 1;
-    }
-  }
-}
+  //   .donate-body-info {
+  //     order: 2;
+  //     text-align: center;
+  //     padding: 0 !important;
+  //     .we-helped-cards {
+  //       grid-template-columns: 1fr !important;
+  //     }
+  //   }
+  //   .donate-form-info {
+  //     order: 1;
+  //   }
+  // }
 
-
-@media screen and(max-width: 767px) {
   .org-info{
     flex-direction: column;
 
@@ -224,5 +255,27 @@ $border-color: #4040415d;
       border-right: none;
     }
   }
+  .payment-gateways{
+    .payment-gateway{
+      grid-template-columns: 1fr !important;
+      .payment-logo{
+        // display: none !important;
+        justify-content: center !important;
+        .hr{
+
+          display: none;
+        }
+      }
+      .payment-numbers{
+        text-align: center;
+        .payment-number{
+          
+          width: 100% !important;
+        }
+      }
+    }
+  }
   
 }
+
+

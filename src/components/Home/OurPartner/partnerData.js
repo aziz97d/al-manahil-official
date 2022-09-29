@@ -1,27 +1,28 @@
 export const partnerData = [
   {
-    img: "https://amwfb.org/wp-content/uploads/2020/07/global.png",
+    img: "https://i.ibb.co/Z1KSVtF/zjm.png",
   },
 
   {
-    img: "https://amwfb.org/wp-content/uploads/2020/07/deniz-feneri-dernegi.png",
+    img: "https://i.ibb.co/VYS2Wk8/ittifak.png",
   },
   {
-    img: "https://amwfb.org/wp-content/uploads/2020/07/matw.png",
+    img: "https://i.ibb.co/f0q5jR0/matw.jpg",
   },
   {
-    img: "https://amwfb.org/wp-content/uploads/2020/07/matw.png",
+    img: "https://i.ibb.co/XsRYMqY/amanaty.png",
   },
   {
-    img: "https://www.amanaty.fr/wp-content/uploads/2020/10/logo-AMANATY_header.png",
+    img: "https://i.ibb.co/pntC7T3/ihcro.png",
   },
   {
-    img: "https://amwfb.org/wp-content/uploads/2020/07/matw.png",
+    img: "https://i.ibb.co/X8P6vfs/grf.png",
   },
   {
-    img: "https://amwfb.org/wp-content/uploads/2020/07/alhasanaat-foundation.png",
+    img: "https://i.ibb.co/dmQ0Cdv/deniz-feneri.jpg",
   },
   {
-    img: "https://amwfb.org/wp-content/uploads/2021/02/nrch34.png",
+    img: "https://i.ibb.co/LrzhJ8L/al-hasanaat-foundation.png",
   },
+  
 ];

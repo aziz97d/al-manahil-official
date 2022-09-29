@@ -1,6 +1,11 @@
 footer {
-  background-color: #E1ECF9;
+  background-color: #E7F9F1;
+  //background-image: url('https://img.freepik.com/free-vector/abstract-watercolor-light-green-texture-background_1055-8198.jpg?w=740&t=st=1664434587~exp=1664435187~hmac=eddf8f143a9558be5e2f5cab0534da44877d6e1f651dcbc5cae76d9b48e85d04');
   // position: relative;
+  background-size: cover;
+  margin-top: 50px;
+  border-top: #00AD50 2px dotted;
+  
 }
 .footer-shape {
   margin-bottom: -5px;
@@ -14,7 +19,7 @@ footer {
   // margin-top: 100px;
   // border-top: green 2px solid;
   font-size: 17px;
-  background-color: #E1ECF9;
+  //background-color: #E1ECF9;
   h3 {
     margin-bottom: 10px;
   }
@@ -44,6 +49,23 @@ footer {
         p {
           margin: 5px 0;
         }
+      }
+    }
+  }
+
+  .contact-us{
+    .contact-link{
+      text-decoration: none;
+      font-size: 40px;
+      // margin: 20px 20px 0 0;
+      margin-right: 20px;
+      .contact-icon-whatsapp{
+        color:	#25D366;
+        margin-top: 30px;
+      }
+      .contact-icon-telegram{
+        color: #229ED9;
+        margin-top: 30px;
       }
     }
   }
@@ -127,7 +149,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 10%;
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
   min-height: 80px;
   align-items: center;
   border-top: 1px solid #00AD50;
@@ -138,7 +160,7 @@ footer {
       text-decoration: none;
       color: #5f646b;
       font-weight: 500;
-      padding: 5px 5px;
+      padding: 5px 10px;
       &:hover {
         color: #00AD50;
       }
@@ -155,7 +177,6 @@ footer {
 
 @media screen and (max-width: 767px){
   .footer-top {
-    
     display: block;}
   .footer-bottom {
     flex-direction: column-reverse;

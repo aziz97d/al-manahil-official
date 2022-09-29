@@ -5,6 +5,8 @@ import donateHeaderImage from "../../images/donatePageHeader.jfif";
 import DonateForm from "../Home/DonateForm/DonateForm.js";
 import { FaAmbulance } from "react-icons/fa";
 import { AiFillBank } from "react-icons/ai";
+import bKashPaymentLogo from '../../images/payment-logo/bKashPayment.png';
+import bKashPersonalLogo from '../../images/payment-logo/bkash-logo.svg';
 
 import _ from "lodash";
 import OurProgress from "../Home/OurProgress/OurProgress.js";
@@ -32,6 +34,9 @@ const Donate = () => {
       </ul>
 
       <div className="payment-gateways">
+      <div >
+          <h3 className="upcomming">Up Comming Automated System.</h3>
+        </div>
         <div className="payment-gateway">
           <div className="payment-logo">
             <AiFillBank className="payment-icon" />
@@ -41,7 +46,7 @@ const Donate = () => {
             <h3>Bank Transfer <span>(Only for Bangladeshi Donation)</span></h3>
             <p>You can transfer money direct into our Donations Account at:</p>
             <div className="account-info">
-              <p><span>Janata Bank</span></p>
+              <p>Bank Name : <span>Janata Bank</span></p>
               <p>Account No : <span>0100132954202</span></p>
               <p>Account Name : <span>Al Manahil Welfare Foundation Bangladesh</span></p>
               <p>Branch :<span> Mimi Super Market Branch. Chattogram</span></p>
@@ -49,6 +54,38 @@ const Donate = () => {
           </div>
         </div>
         
+        <div className="payment-gateway">
+          <div className="payment-logo">
+            <img src={bKashPersonalLogo} />
+            <div className="hr"></div>
+          </div>
+
+          <div className="payment-numbers">
+            <h3>bKash</h3>
+            
+            <div className="account-info">
+              
+              <p>Account No : <span>01886576775</span> / <span>01886576776</span></p>
+              <p>Account Type : <span>Persoanl</span></p>
+            </div>
+          </div>
+        </div>
+        <div className="payment-gateway">
+          <div className="payment-logo">
+            <img src={bKashPaymentLogo} />
+            <div className="hr"></div>
+          </div>
+
+          <div className="payment-numbers">
+            <h3>bKash</h3>
+            
+            <div className="account-info">
+              
+              <p>Account No : <span>01785727920</span></p>
+              <p>Account Type : <span>Merchant</span></p>
+            </div>
+          </div>
+        </div>
         <div className="payment-gateway">
           <div className="payment-logo">
             <img src="https://i.ibb.co/ZzKNsck/Nagad-Horizontal-Logo-wine.png" />
@@ -81,7 +118,7 @@ const Donate = () => {
           </div>
         </div>
         
-        <div className="payment-gateway">
+        {/* <div className="payment-gateway">
           <div className="payment-logo">
             <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash2-Logo.wine.svg" />
             <div className="hr"></div>
@@ -98,7 +135,7 @@ const Donate = () => {
               className="payment-number"
             />
           </div>
-        </div>
+        </div> */}
       </div>
       
       {/* <div className="donate-body">

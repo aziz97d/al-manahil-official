@@ -21,7 +21,7 @@ i18n
         translation: {
           menu:{
             home: "Home",
-            zakat: "Zakat",
+            ramadan: "Ramadan",
             events : "Success Story",
             aboutUs:"About Us",
             ourProjects:"Our Projects",
@@ -38,7 +38,7 @@ i18n
           translation:{
             menu:{
               home: "হোম",
-              zakat: "জাকাত",
+              ramadan: "জাকাত",
             events : "সফল গল্পগুলো",
               aboutUs:"আমাদের সম্পর্কে",
               ourProjects:"প্রকল্প সমূহ",
@@ -56,7 +56,7 @@ i18n
         translation:{
           menu:{
             home: "هوم",
-            zakat: "الزكة",
+            ramadan: "الزكة",
             events : "قصص نجاح",
             aboutUs:"عن المناهل ",
             ourProjects:"المشاريع",

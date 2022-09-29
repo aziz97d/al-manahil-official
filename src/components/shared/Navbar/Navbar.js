@@ -133,7 +133,7 @@ function Navbar() {
             <a
               className="social-link"
               target="_blank"
-              href="https://www.instagram.com/amwfb"
+              href="https://www.linkedin.com/company/amwfborg/"
               rel="noreferrer"
             >
               <FaLinkedinIn className="social-icon" />
@@ -154,9 +154,9 @@ function Navbar() {
         </div>
 
         <div className={navbarClasses.join(" ")}>
-          <div className="brand-logo">
+          <Link to="/home" className="brand-logo">
             <img src={logo} />
-          </div>
+          </Link>
 
           <button
             id="nav-btn"
@@ -168,8 +168,8 @@ function Navbar() {
 
           <ul id="nav-ul" className="nav-ul">
             <li>
-              <Link to="/zakat" className="nav-item">
-                {t("menu.zakat")}
+              <Link to="/ramadan" className="nav-item">
+                {t("menu.ramadan")}
               </Link>
             </li>
             <li>

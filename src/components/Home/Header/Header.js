@@ -27,7 +27,7 @@ function Header() {
           <div className="slider-overlay">
             <img
               className="slider-image"
-              src="https://amwfb.org/wp-content/uploads/revslider/slider-1-scaled.jpg"
+              src="https://i.ibb.co/zRybwdt/slider-1-scaled.jpg"
               alt=""
             />
             <Link className="animated-donate-button">
@@ -37,14 +37,14 @@ function Header() {
           <div>
             <img
               className="slider-image"
-              src="https://amwfb.org/wp-content/uploads/revslider/slider-2-scaled.jpg"
+              src="https://i.ibb.co/NKZmL5h/slider-2-scaled.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="slider-image"
-              src="https://amwfb.org/wp-content/uploads/revslider/water.jpg"
+              src="https://i.ibb.co/P1Q1SH2/give-water-01.png"
               alt=""
             />
           </div>

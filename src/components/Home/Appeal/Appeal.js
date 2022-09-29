@@ -12,9 +12,36 @@ import { Link, useParams } from "react-router-dom";
 import data from "../../../data/AppealData.js";
 function Appeal() {
   return (
-    <section className="appeal-section">
-      
-      <div className="appeal-section-header">
+    // <section className="appeal-section">
+
+    //   <div className="appeal-section-header">
+    //     <h1>
+    //       “<span>Charity </span> extinguishes the sins like water <br />{" "}
+    //       extinguishes a <span> fire</span>”{" "}
+    //     </h1>
+    //     <p>(Ibn Majah)</p>
+    //   </div>
+
+    //   <div className="appeals">
+    //     {data.map((appeal) => (
+    //       <Link to={`/appealDetails/${appeal.appealId}`} className="appeal">
+    //         <div className="appeal-sub">
+    //           <img src={appeal["appealImage"]} />
+    //           <p>
+    //             <strong>{appeal["appealTitle"]}</strong>
+    //             <br />
+    //             <br />
+    //             {appeal["appealDescription"]}
+
+    //           </p>
+    //         </div>
+    //       </Link>
+    //     ))}
+    //   </div>
+    // </section>
+
+    <section className="media-coverage-section">
+      <div className="section-header">
         <h1>
           “<span>Charity </span> extinguishes the sins like water <br />{" "}
           extinguishes a <span> fire</span>”{" "}
@@ -22,18 +49,19 @@ function Appeal() {
         <p>(Ibn Majah)</p>
       </div>
 
-      <div className="appeals">
+      <div className="news-card-list">
         {data.map((appeal) => (
-          <Link to={`/appealDetails/${appeal.appealId}`} className="appeal">
-            <div className="appeal-sub">
-              <img src={appeal["appealImage"]} />
-              <p>
-                <strong>{appeal["appealTitle"]}</strong>
-                <br />
-                <br />
-                {appeal["appealDescription"]}
-                {/* Otherwise, there is no alternative way for saving human life. Tube wells and deep tube wells are very beneficial for the water supply and by the virtue of which difficulty of water can be mitigated. */}
-              </p>
+          <Link to={`/appealDetails/${appeal.appealId}`} className="news-card">
+            <div className="news-card-body">
+              <div className="card-image-div">
+                <img src={appeal["appealImage"]} />
+              </div>
+              {/* <p className="news-category">{appeal["appealTitle"]}</p> */}
+              <h4>{appeal["appealTitle"]}</h4>
+              <p>{appeal["appealDescription"]}</p>
+            </div>
+            <div className="news-card-footer">
+            <p className="view-more-button">View More</p>
             </div>
           </Link>
         ))}

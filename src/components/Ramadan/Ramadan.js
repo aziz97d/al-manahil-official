@@ -5,7 +5,7 @@ import "./Ramadan.scss";
 const Ramadan = () => {
   return (
     <section className="ramadan-section">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="ramada-header">
         <h1>Ramadan Mubarak</h1>
         <p>Our Goal In this Ramadan</p>

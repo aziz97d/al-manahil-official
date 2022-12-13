@@ -1,10 +1,11 @@
-.home-bg-div{
-    
+.home-bg-div {
   background-color: #00ad50;
   // height: 3000px;
   // width: 1200px;
 }
-
+p {
+  line-height: 1.5;
+}
 // Common Header Class
 .section-header {
   text-align: center;
@@ -18,19 +19,20 @@
     margin: 0;
     color: grey;
   }
-  &:nth-child(even){
+  &:nth-child(even) {
     color: #00ad50;
   }
-  &:nth-child(odd){
+  &:nth-child(odd) {
     color: #00ad50;
   }
 }
 
 @media screen and (max-width: 767px) {
   .section-header {
-    font-size: 15px !important;}
+    font-size: 15px !important;
+  }
 }
-.image-bg-success{
+.image-bg-success {
   position: absolute;
   left: 0;
   z-index: -1;

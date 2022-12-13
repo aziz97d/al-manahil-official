@@ -91,11 +91,13 @@
     .sidenav a {font-size: 18px;}
   }
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 992px){
     .sidenav {
       display: flex;
     }
+
   }
+
 
   .brand-orange-button{
     

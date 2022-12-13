@@ -21,7 +21,7 @@ function Header() {
   };
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       <div>
         <Slider {...settings}>
           <div className="slider-overlay">

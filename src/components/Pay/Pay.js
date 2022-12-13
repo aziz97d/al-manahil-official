@@ -9,7 +9,7 @@ const KEY =
 
 const Pay = () => {
   const [stripeToken, setStripeToken] = useState(null);
-  const history = useHistory();
+  //const history = useHistory();
 
   // const onToken = (token) => {
   //   setStripeToken(token);

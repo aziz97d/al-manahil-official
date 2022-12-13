@@ -1,20 +1,20 @@
 .donate-form {
   width: 100%;
   display: grid;
-  // align-items: center;
-  // grid-template-columns: 1.3fr 4fr;
   margin-top: -5px;
   justify-content: space-between;
+  z-index: 10;
+  // align-items: center;
+  // grid-template-columns: 1.3fr 4fr;
   // background-color: #00ad51a2;
   // border: 1px solid #00ad51a2;
-  z-index: 10;
 
   .donate-form-text {
     width: 100%;
     // height: 60px;
+    // background-color: #00AD50;
     color: white;
     text-transform: uppercase;
-    // background-color: #00AD50;
     font-weight: 600;
     font-size: 20px;
     display: flex;
@@ -24,8 +24,8 @@
   .donate-form-body {
     display: grid;
     grid-gap: 15px;
-    // grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
     padding: 5px 5px;
+    // grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
 
     .donate-form-img {
       position: relative;

@@ -13,7 +13,7 @@ import OurProgress from "../Home/OurProgress/OurProgress.js";
 const Donate = () => {
   return (
     <section className="donate-section">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <div className="donate-header">
         <img className="donate-header-image" src={donateHeaderImage} />
         <div className="header-overlay-text">

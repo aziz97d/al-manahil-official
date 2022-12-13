@@ -24,7 +24,7 @@ i18n
             ramadan: "Ramadan",
             events : "Success Story",
             aboutUs:"About Us",
-            ourProjects:"Our Projects",
+            ourProjects:"Appeals",
             latest:"Latest",
             contactUs:"Contact Us"
           },

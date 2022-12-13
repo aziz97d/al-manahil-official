@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import "./Appeal.scss";
 import waterWell from "../../../images/card-image/Water Well.png";
 import food from "../../../images/card-image/FOOD.png";
@@ -10,7 +10,13 @@ import rohingya from "../../../images/card-image/ROHINGYA.png";
 import ablution from "../../../images/card-image/ABLUTION.png";
 import { Link, useParams } from "react-router-dom";
 import data from "../../../data/AppealData.js";
-function Appeal() {
+function Appeal({noOfAppealShow, children}) {
+  let showAppealData = [];
+  if(noOfAppealShow){
+    showAppealData = data.slice(-noOfAppealShow);
+  }else{
+    showAppealData = data;
+  }
   return (
     // <section className="appeal-section">
 
@@ -41,16 +47,13 @@ function Appeal() {
     // </section>
 
     <section className="media-coverage-section">
-      <div className="section-header">
-        <h1>
-          “<span>Charity </span> extinguishes the sins like water <br />{" "}
-          extinguishes a <span> fire</span>”{" "}
-        </h1>
-        <p>(Ibn Majah)</p>
-      </div>
+      
+      {
+        children
+      }
 
       <div className="news-card-list">
-        {data.map((appeal) => (
+        {showAppealData.map((appeal) => (
           <Link to={`/appealDetails/${appeal.appealId}`} className="news-card">
             <div className="news-card-body">
               <div className="card-image-div">

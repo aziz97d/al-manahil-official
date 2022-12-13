@@ -17,8 +17,7 @@ import {
   FaFacebookF,
   FaTwitter,
   FaYoutube,
-  FaLinkedinIn
-
+  FaLinkedinIn,
 } from "react-icons/fa";
 import "./Navbar.scss";
 import "./ResponsiveNavbar.scss";
@@ -104,14 +103,13 @@ function Navbar() {
             </p>
           </div>
           <ul className="nav-social-icons">
-            
             <a
               className="social-link"
               target="_blank"
               href="https://www.facebook.com/amwfborg"
               rel="noreferrer"
             >
-              <FaFacebookF className="social-icon"  />
+              <FaFacebookF className="social-icon" />
             </a>
             <a
               className="social-link"
@@ -119,16 +117,16 @@ function Navbar() {
               href="https://twitter.com/amwfborg"
               rel="noreferrer"
             >
-              <FaTwitter className="social-icon"  />
+              <FaTwitter className="social-icon" />
             </a>
-           
+
             <a
               className="social-link"
               target="_blank"
               href="https://www.youtube.com/channel/UCr7gpLwHDGS_vc0NIFU70Eg"
               rel="noreferrer"
             >
-              <FaYoutube className="social-icon"  />
+              <FaYoutube className="social-icon" />
             </a>
             <a
               className="social-link"
@@ -148,13 +146,11 @@ function Navbar() {
             <button className="lng-btn active">ENG</button>
             <button className="lng-btn">BN</button>
             <button className="lng-btn">AR</button>
-
           </div>
-          
         </div>
 
         <div className={navbarClasses.join(" ")}>
-          <Link to="/home" className="brand-logo">
+          <Link to="/" className="brand-logo">
             <img src={logo} />
           </Link>
 
@@ -173,14 +169,14 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className="nav-item">{t("menu.events")}</Link>
+              <Link to="/successStory" className="nav-item">{t("menu.events")}</Link>
             </li>
             <li>
               <Link to="/projects" className="nav-item">
                 {t("menu.ourProjects")}
               </Link>
             </li>
-            
+
             <li>
               <Link className="nav-item">{t("menu.latest")}</Link>
             </li>
@@ -193,8 +189,8 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/donate" className="nav-item nav-signin-button">
-              {t("buttons.signIn")}
+              <Link to="/authentication" className="nav-item nav-signin-button">
+                {t("buttons.signIn")}
               </Link>
             </li>
 
@@ -227,6 +223,14 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="/ramadan" className="nav-item">
+              {t("menu.ramadan")}
+            </Link>
+          </li>
+          <li>
+              <Link to="/successStory" className="nav-item">{t("menu.events")}</Link>
+            </li>
+          <li>
             <Link className="nav-item">{t("menu.aboutUs")}</Link>
           </li>
           <li>
@@ -238,17 +242,23 @@ function Navbar() {
             <Link className="nav-item">{t("menu.contactUs")}</Link>
           </li>
           <li>
-            <Link className=""> <input style={{paddingLeft:'20px'}} placeholder="Search"/> </Link>
+            <Link className="">
+              {" "}
+              <input
+                style={{ paddingLeft: "20px" }}
+                placeholder="Search"
+              />{" "}
+            </Link>
           </li>
           <li>
-            <Link className="nav-item brand-orange-button">
+            <Link to="/donate" className="nav-item brand-orange-button">
               {t("buttons.donate")}
             </Link>
           </li>
         </ul>
 
         <div className="nav-feature">
-          <Link className="nav-icon-button">
+          <Link to="/authentication" className="nav-icon-button">
             <FaRegUserCircle />
           </Link>
           <Link className="nav-icon-button">
@@ -256,7 +266,7 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      {/* --------- Mobile Responsive Menu Start-------- */}
+      {/* --------- Mobile Responsive Menu End-------- */}
     </div>
   );
 }

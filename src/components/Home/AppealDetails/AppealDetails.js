@@ -65,7 +65,7 @@ const AppealDetails = () => {
   // console.log(appeal);
   return (
     <>
-      <Navbar />
+      
       <section>
         <div className="appeal-details-header">
           <img src={appealHeaderImageUrl} alt="" />
@@ -77,14 +77,14 @@ const AppealDetails = () => {
           <h1>{header}</h1>
           {/* <img className="zk-policy" src={zkPolicy} alt=""/> */}
           <p>
-            Globally, <span>785 MILLION</span> people lack access to clean
+            {/* Globally, <span>785 MILLION</span> people lack access to clean
             water.
             <br />
             <br />
             At least <span>2 BILLION</span> people in the world get their water
             from contaminated sources.
             <br />
-            <br />
+            <br /> */}
             {infoDetails}
           </p>
         </div>
@@ -153,7 +153,6 @@ const AppealDetails = () => {
           </div>
         </div>
 
-        <Footer />
       </section>
     </>
   );

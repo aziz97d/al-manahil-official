@@ -68,12 +68,13 @@ export default function DonateForm({
           type="button"
           value="Donate"
         />
-        <div
+        
+        {/* <div
           style={{ marginTop: isDirectionColumn ? "50px" : "" }}
           className="donate-form-img"
         >
           <img src={jkPolicy} alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

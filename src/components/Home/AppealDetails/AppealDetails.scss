@@ -20,12 +20,12 @@
     justify-content: center;
     flex-direction: column;
     font-size: 35px;
-    font-family: 'Paytone One', sans-serif;
-    color: #00ad50;    
+    font-family: "Paytone One", sans-serif;
+    color: #00ad50;
     text-transform: uppercase;
     opacity: 1 !important;
     padding: 1rem 5rem;
-    span{
+    span {
       font-size: 17px;
       font-family: "Ruluko", sans-serif;
       padding: 1rem 0;
@@ -95,17 +95,17 @@
 }
 
 @media screen and (max-width: 767px) {
-  .appeal-details-header{
+  .appeal-details-header {
     height: 200px;
 
-    h1{
+    h1 {
       font-size: 16px !important;
       padding: 0;
       padding-top: 1.5rem;
-      span{
+      span {
         font-size: 11px !important;
-        
-      text-align: left;
+
+        text-align: left;
         // background-color: wheat;
         text-shadow: 1px 1px 1px white;
         padding: 5px;
